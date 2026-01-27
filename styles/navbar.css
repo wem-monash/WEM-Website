@@ -1,16 +1,21 @@
 .main-nav {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    background-color: var(--bg-lavender); /* Using your brand purple */
-    border-bottom: 2px solid var(--raw-purple-standard);
+    height: 60px;
+    width: 100%;
+    background-color: rgba(54, 21, 89, 0.5);
 }
 
 .nav-logo {
-    font-family: var(--font-heading); /* Architects Daughter */
-    font-size: 1.5rem;
-    color: var(--text-dark-purple);
+    width: 100%;
+
+}
+
+.logo {
+    width: 30px;
 }
 
 .nav-links {
@@ -21,10 +26,11 @@
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-primary);
-    font-weight: bold;
+    color: var(--text-secondary);
+    font-family: 'Inter';
+    font-size: 12px;
 }
 
 .nav-links a:hover {
-    color: var(--raw-purple-darker);
+    color: var(--purple-darker);
 }

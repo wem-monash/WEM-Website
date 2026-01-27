@@ -1,13 +1,13 @@
 :root {
     /* --- COLOUR PALETTE --- */
     /* Purples */
-    --purple-darkest: #231145;
-    --purple-darker: #6a3ab1;
-    --purple-dark: #9176b8;
-    --purple-standard: #c2ade6;
-    --purple-light: #d6ccf0;
-    --purple-lighter: #f3ebf8;
-    --purple-lightest: #faf6fd;
+    --purple-darkest: #361559;
+    --purple-darker: #6D35A6;
+    --purple-dark: #9774B8;
+    --purple-standard: #C7A6E8;
+    --purple-light: #D5C0EB;
+    --purple-lighter: #F5DFFF;
+    --purple-lightest: #FBF2FF;
 
     /* Secondary & Neutrals */
     --blue-light: #b3c7ff;
@@ -24,9 +24,8 @@
 
     /* Backgrounds */
     --bg-primary: var(--white);
-    --bg-secondary: #f8f8f8;
+    --bg-secondary: var(--purple-darkest);
     --bg-inverse: var(--grey);
-    --bg-alt: var(--black);
     --bg-lavender: var(--purple-lighter);
     --bg-light-blue: var(--blue-light);
     --bg-light-orange: var(--orange-light);
@@ -42,10 +41,12 @@
     --lh-tight: 1.1;
     --lh-medium: 1.2;
     --lh-relaxed: 1.4;
+
+    --font-heading: 'Architects Daughter';
 }
 
 /* --- GLOBAL TAG STYLES --- */
-body {
+body, p {
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     font-size: var(--p-size);
@@ -53,10 +54,9 @@ body {
     margin: 0;
 }
 
-h1 { font-family: 'Architects Daughter'; font-size: var(--h1-size); line-height: var(--lh-tight); color: var(--text-secondary); }
-h2 { font-family: 'Architects Daughter'; font-size: var(--h2-size); line-height: var(--lh-tight); color: var(--text-primary); }
-h3 { font-family: 'Architects Daughter'; font-size: var(--h3-size); line-height: var(--lh-tight); color: var(--text-dark-purple); }
-h4 { font-family: 'Architects Daughter'; font-size: var(--h4-size); line-height: var(--lh-medium); color: var(--text-primary); }
-h5 { font-family: 'Architects Daughter'; font-size: var(--h5-size); line-height: var(--lh-relaxed); color: var(--text-primary); }
+h1 { font-family: var(--font-heading); font-size: var(--h1-size); line-height: var(--lh-tight); color: var(--text-secondary); margin: 0; }
+h2 { font-family: var(--font-heading); font-size: var(--h2-size); line-height: var(--lh-tight); color: var(--text-primary); margin: 0; }
+h3 { font-family: var(--font-heading); font-size: var(--h3-size); line-height: var(--lh-tight); color: var(--text-dark-purple); margin: 0; }
+h4 { font-family: var(--font-heading); font-size: var(--h4-size); line-height: var(--lh-medium); color: var(--text-primary); margin: 0; }
+h5 { font-family: var(--font-heading); font-size: var(--h5-size); line-height: var(--lh-relaxed); color: var(--text-primary); margin: 0; }
 
-p { margin-bottom: 1.5rem; }
