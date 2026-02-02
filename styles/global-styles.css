@@ -19,7 +19,7 @@
     /* Text */
     --text-primary: var(--black);
     --text-secondary: var(--white);
-    --text-dark-purple: var(--purple-darkest);
+    --text-dark-purple: var(--purple-darker);
     --text-light-purple: var(--purple-lighter);
 
     /* Backgrounds */
