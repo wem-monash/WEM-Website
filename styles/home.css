@@ -128,7 +128,6 @@
     border-radius: 10px;
     padding: 10px;
     background-color: var(--purple-light);
-    /*width: 300px;*/
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -138,6 +137,47 @@
     width: 100%;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.about-objectives {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    gap: 20px;
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.objectives-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 40px 60px;
+}
+
+.objectives-cell.top-left {
+    background-color: var(--purple-lighter);
+}
+
+.objectives-cell.top-right {
+    background-color: var(--bg-light-orange);
+}
+
+.objectives-cell.bottom-left {
+    background-color: var(--bg-light-blue);
+}
+
+.objectives-cell.bottom-right {
+    background-color: var(--purple-lightest);
 }
 
 @media (max-width: 768px) {
@@ -194,5 +234,17 @@
 
     .about-logo {
         width: 200px;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 250px;
+    }
+
+    .objectives-icon {
+        width: 50px;
+    }
+
+    .objectives-cell {
+        padding: 20px 40px;
     }
 }
