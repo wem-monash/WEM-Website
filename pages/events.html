@@ -1,15 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
   <script src="../assets/global-loader.js"></script>
+
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="stylesheet" href="../styles/events.css">
+
+
 </head>
 <body>
   <div id="navbar"></div>
-  <h2>
-    Welcome to WEM
-  </h2>
-  <p>
-    Events Page hehe
-  </p>
+
+     <!-- Hero Section-->
+    <section class="events-hero">
+    <img src="../assets/images/WEMHighTeaEventsBanner.jpg"
+         class="events-hero-img"
+         alt="Events Banner">
+
+    <div class="events-hero-stack">
+      <h1>Events</h1>
+    </div>
+  </section>
+
+
+  <!-- Upcoming Events -->
+  <section class="upcoming">
+    <div class="upcoming-stack">
+
+      <h3>Upcoming Events</h3>
+
+      <div class="upcoming-cards-row">
+
+        <div class="upcoming-card">
+          <img src="../assets/images/club-cocktail-1.jpg" class="upcoming-card-img" alt="Event 1">
+          <button>Buy Tickets</button>
+        </div>
+
+        <div class="upcoming-card">
+          <img src="../assets/images/WEMCocktailNight-111.jpg" class="upcoming-card-img" alt="Event 2">
+          <button>Buy Tickets</button>
+        </div>
+
+        <div class="upcoming-card">
+          <img src="../assets/images/igl-3.jpg" class="upcoming-card-img" alt="Event 3">
+          <button>Buy Tickets</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Signature Events -->
+  <section class="signature">
+    <div class="signature-stack">
+
+      <h3>Signature Events</h3>
+
+      <div class="signature-grid">
+
+        <!-- Image -->
+        <div class="signature-img-box">
+          <img src="../assets/images/WEMPowertools.png" alt="PowerTools Event">
+        </div>
+
+        <!-- Text -->
+        <div class="signature-box">
+          <h4>WEM PowerTools</h4>
+          <p>
+            Hands-on workshops designed to empower women in engineering through
+            skills, networking, and community building.
+          </p>
+        </div>
+
+        <!-- Text -->
+        <div class="signature-box">
+          <h4>WEM O-Week Picnic</h4>
+          <p>
+            Meet and connect with fellow Female engineering students at our fun-filled
+            O-week picnic event, featuring Female professors, team and club leaders giving 
+            insights about your engineering journey.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="signature-img-box">
+          <img src="../assets/images/WEMPicnic.png" alt="Cocktail Night">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Carousel Gallery -->
+  <section class="gallery">
+    <h4>We Hope to See You at Our Events!</h4>
+
+    <div class="carousel-wrapper">
+
+      <!-- Left Arrow -->
+      <button class="carousel-btn left" onclick="scrollCarousel(-1)">
+        ‹
+      </button>
+
+      <!-- Carousel Track -->
+      <div class="carousel-track" id="carouselTrack">
+        <img src="../assets/images/cocktail-1.jpg" alt="Event Photo">
+        <img src="../assets/images/WEMDodgeball.jpg" alt="Event Photo">
+        <img src="../assets/images/WEMHighTea-47.jpg" alt="Event Photo">
+        <img src="../assets/images/igl-1.jpg" alt="Event Photo">
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="carousel-btn right" onclick="scrollCarousel(1)">
+        ›
+      </button>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Carousel Script -->
+  <script>
+    function scrollCarousel(direction) {
+      const track = document.getElementById("carouselTrack");
+      const scrollAmount = 400;
+
+      track.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+      });
+    }
+  </script>
+
 </body>
 </html>
