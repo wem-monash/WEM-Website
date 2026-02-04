@@ -1,0 +1,67 @@
+/* removed default padding as each section had different padding*/
+body {
+    padding:0;
+}
+
+/* grid container. */
+.reasons-grid {
+  display: grid;
+  padding: clamp(10px, 5vw, 50px) clamp(20px, 10vw, 120px);
+  /*clamp top and bottom padding at 10px min, and 50px max, and scales with 5% view port*/
+  /*clamp left and right at 20px min and 120px max with 10% vw scale*/
+  gap: clamp(24px, 3vw, 30px);
+  /*adjust gap between rows as screen resizes with 24 as min and 30 as max growing 10% of view port*/
+  max-width: 1600px;
+  /*clamed the wdith to make sure content isnt tiny and streched across in large screens*/
+  margin: 0 auto;
+  align-content: center;
+
+  /* default: 1s column for small screens*/
+  grid-template-columns: 1fr;
+}
+
+/* medium screens will have two columns*/
+@media (min-width: 520px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, minmax(200px, 420px));
+    justify-content: center;
+  }
+}
+
+/* large screens will have 4 columns to get rid of white space*/
+@media (min-width: 1600px) {
+  .reasons-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* contanier for each reason*/
+.reason-cell{
+  padding: 20px 15px;
+  /* stack elements vertically*/
+  display: flex;
+  flex-direction: column;
+  /*horizontally center everything inside the card*/
+  align-items: center;
+}
+
+.reason-icon {
+    height: auto;
+    width: clamp(200px, 24vw, 340px);
+    /* Makes the image responsive:
+       - Min width 200px: never too small
+       - Max width 340px: never too big
+       - Preferred width: 20% of viewport
+    */
+}
+
+.reason-caption{
+    margin: 10px 0 5px;
+}
+
+.reason-description{
+    max-width: 25ch;
+    /*limit line length for readability*/
+    text-align: center;
+}
+
