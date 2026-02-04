@@ -21,7 +21,7 @@ body {
 }
 
 /* medium screens will have two columns*/
-@media (min-width: 520px) {
+@media (min-width: 580px) {
   .reasons-grid {
     grid-template-columns: repeat(2, minmax(200px, 420px));
     justify-content: center;
@@ -45,14 +45,20 @@ body {
   align-items: center;
 }
 
+/*Added image wrapper to control image size and svgs were of different sizes*/
+.icon-row {
+  width: clamp(200px, 20vw, 340px);
+    height: 200px;               /* fixed visual height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .reason-icon {
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
-    width: clamp(200px, 24vw, 340px);
-    /* Makes the image responsive:
-       - Min width 200px: never too small
-       - Max width 340px: never too big
-       - Preferred width: 20% of viewport
-    */
+    width: auto;
 }
 
 .reason-caption{
