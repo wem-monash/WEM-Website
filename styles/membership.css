@@ -3,10 +3,16 @@ body {
     padding:0;
 }
 
+.hero-text{
+  color:black;
+  text-align: center;
+  margin-top: 40px;
+}
+
 /* grid container. */
 .reasons-grid {
   display: grid;
-  padding: clamp(10px, 5vw, 50px) clamp(20px, 10vw, 120px);
+  padding: clamp(10px, 5vw, 40px) clamp(20px, 10vw, 120px);
   /*clamp top and bottom padding at 10px min, and 50px max, and scales with 5% view port*/
   /*clamp left and right at 20px min and 120px max with 10% vw scale*/
   gap: clamp(24px, 3vw, 30px);
@@ -21,7 +27,7 @@ body {
 }
 
 /* medium screens will have two columns*/
-@media (min-width: 580px) {
+@media (min-width: 460px) {
   .reasons-grid {
     grid-template-columns: repeat(2, minmax(200px, 420px));
     justify-content: center;
@@ -47,8 +53,8 @@ body {
 
 /*Added image wrapper to control image size and svgs were of different sizes*/
 .icon-row {
-  width: clamp(200px, 20vw, 340px);
-    height: 200px;               /* fixed visual height */
+  width: clamp(160px, 20vw, 340px);
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
