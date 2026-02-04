@@ -62,7 +62,7 @@
     border-radius: 10px;
     padding: 10px;
     background-color: var(--purple-lightest);
-    width: 300px;
+    width: 350px;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -93,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     padding: 60px 0;
 }
 
@@ -116,6 +116,7 @@
 
 .about-cell.text {
     align-items: flex-start;
+
 }
 
 .about-logo {
@@ -178,6 +179,73 @@
 
 .objectives-cell.bottom-right {
     background-color: var(--purple-lightest);
+}
+
+.portfolios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.portfolios-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--black);
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.portfolio:hover {
+    width: 380px;
+    transition: 0.5s;
+}
+
+.portfolio.outreach {
+    background-color: var(--blue);
+    transform: rotate(-5deg);
+}
+
+.portfolio.industry {
+    background-color: var(--purple-standard);
+    transform: rotate(-2deg);
+}
+
+.portfolio.events {
+    background-color: var(--orange);
+    transform: rotate(4deg);
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.portfolio-button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.portfolio-button:hover {
+    background-color: var(--black);
+    color: var(--text-secondary);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
