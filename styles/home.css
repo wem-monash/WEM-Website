@@ -315,4 +315,16 @@
     .objectives-cell {
         padding: 20px 40px;
     }
+
+    .portfolios-stack {
+        flex-direction: column;
+    }
+
+    .portfolio {
+        width: 200px;
+    }
+
+    .portfolio:hover {
+        width: 240px;
+    }
 }
