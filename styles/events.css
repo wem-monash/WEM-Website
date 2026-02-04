@@ -39,27 +39,36 @@
 
 
 .upcoming-cards-row {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .upcoming-card {
-    background-color: var(--purple-darkest);
-    padding: 15px;
+    background-color: var(--purple-dark);
+    padding: 20px;
     border-radius: 15px;
-    width: 200px;
+    width: 350px;
+    height: 420px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+
+    border: 2px solid black;
 }
 
 .upcoming-card-img {
     width: 100%;
     border-radius: 10px;
+    height: 350px;
+    border: 2px solid black;
 }
 
 
@@ -68,10 +77,17 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    gap: 30px;
+    height: 100px;
+    width: 150px;
 
+
+
+    border: 2px solid black;
     font-weight: bold;
-    background-color: white;
+    background-color: whitesmoke;
     color: var(--purple-darkest);
+
 }
 
 .upcoming-card button:hover {
