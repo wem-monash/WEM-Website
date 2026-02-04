@@ -84,7 +84,7 @@
 /* signature events */
 
 .signature {
-    padding: 60px;
+    padding: 20px;
     background-color: var(--bg-primary);
 }
 
@@ -95,25 +95,34 @@
 }
 
 .signature-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
     gap: 25px;
-    justify-content: center;
+    justify-items: center;
+    margin:0 auto;
+    align-items: start;
 }
 
 
 .signature-box{
-    width: 320px;
-    padding: 20px;
+    width: 420px;
+    padding: 30px;
     border-radius: 15px;
     background-color: var(--purple-light);
+    height: 310px;
+    justify-items: center;
+    border: 2px solid black;
+
 }
 
 .signature-img-box {
-    width: 320px;
+    width: 420px;
     padding: 20px;
     border-radius: 15px;
     background-color: var(--purple-light);
+    justify-self: center;
+    height: 330px;
+    border: 2px solid black;
 }
 
 .signature-img-box img {
