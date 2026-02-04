@@ -104,10 +104,10 @@
   <hr class="divider">
 
   <!-- Carousel Gallery -->
-  <section class="gallery" style="background-color: var(--bg-lavender);">
+  <section class="gallery" style="background-color: var(--bg-secondary);">
     <br>
     <br>
-    <h2 style="text-align: center; ">We Hope to See You at Our Events!</h2>
+    <h2 style="text-align: center; color: aliceblue; ">We Hope to See You at Our Events!</h2>
 
     <br>
     <br>
@@ -148,6 +148,21 @@
         behavior: "smooth"
       });
     }
+
+    function autoScrollCarousel(){
+      const track = document.getElementById("carouselTrack");
+      const scrollAmount = 400;
+
+    setInterval(() => {
+      track.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    }, 2000); // this is currently scrolling every 2 seconds
+  }
+
+  
+    window.onload = autoScrollCarousel;
   </script>
 
 </body>
