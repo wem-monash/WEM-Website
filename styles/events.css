@@ -1,0 +1,186 @@
+
+.events-hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.events-hero-img{
+    
+    width: 100%;
+    filter: brightness(0.75);
+}
+
+.events-hero-stack {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+ /* upcoming events */
+
+ .upcoming {
+    background-color: var(--bg-lavender);
+    padding: 60px;
+}
+
+.upcoming-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.upcoming-cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.upcoming-card {
+    background-color: var(--purple-darkest);
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.upcoming-card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.upcoming-card button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: bold;
+    background-color: white;
+    color: var(--purple-darkest);
+}
+
+.upcoming-card button:hover {
+    background-color: var(--purple-light);
+}
+
+
+
+
+/* signature events */
+
+.signature {
+    padding: 60px;
+    background-color: var(--bg-primary);
+}
+
+.signature-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.signature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.signature-box{
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--purple-light);
+}
+
+.signature-img-box {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--purple-light);
+}
+
+.signature-img-box img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+
+
+
+/* events carousel */
+
+.carousel {
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding: 10px;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track img {
+    width: 350px;
+    height: 220px;
+
+    border-radius: 15px;
+    object-fit: cover;
+
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+
+
+/* buttons for carousel */
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-btn {
+    background: var(--purple-darkest);
+    color: white;
+    border: none;
+    font-size: 30px;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.carousel-btn:hover {
+    background: var(--purple-darker);
+}
