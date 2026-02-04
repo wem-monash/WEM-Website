@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../styles/global-styles.css">
     <link rel="stylesheet" href="../styles/events.css">
+    <script src="../scripts/upcoming-events.js" defer></script>
+    <script src="../scripts/carousel.js" defer></script>
 
 
 </head>
@@ -29,27 +31,8 @@
   <!-- Upcoming Events -->
   <section class="upcoming">
     <div class="upcoming-stack">
-
       <h2>Upcoming Events</h2>
-
-      <div class="upcoming-cards-row">
-
-        <div class="upcoming-card">
-          <img src="../assets/images/WEM_UpcomingEventSample.jpg" class="upcoming-card-img" alt="Event 1">
-          <button>Buy Tickets</button>
-        </div>
-
-        <div class="upcoming-card">
-          <img src="../assets/images/logo.png" class="upcoming-card-img" alt="Event 2">
-          <button>Buy Tickets</button>
-        </div>
-
-        <div class="upcoming-card">
-          <img src="../assets/images/WEM_UpcomingEventSample.jpg" class="upcoming-card-img" alt="Event 3">
-          <button>Buy Tickets</button>
-        </div>
-
-      </div>
+      <div class="upcoming-cards-row" id="upcomingEvents"></div>
     </div>
   </section>
 
@@ -136,34 +119,6 @@
 
 
 
-
-  <!-- Carousel Script -->
-  <script>
-    function scrollCarousel(direction) {
-      const track = document.getElementById("carouselTrack");
-      const scrollAmount = 400;
-
-      track.scrollBy({
-        left: direction * scrollAmount,
-        behavior: "smooth"
-      });
-    }
-
-    function autoScrollCarousel(){
-      const track = document.getElementById("carouselTrack");
-      const scrollAmount = 400;
-
-    setInterval(() => {
-      track.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth"
-      });
-    }, 2000); // this is currently scrolling every 2 seconds
-  }
-
-  
-    window.onload = autoScrollCarousel;
-  </script>
 
 </body>
 </html>
