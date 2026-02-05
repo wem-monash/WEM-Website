@@ -1,0 +1,15 @@
+.stats-section {
+    background-color: var(--bg-secondary);
+}
+
+.event-card {
+    background-color: var(--bg-secondary);
+}
+
+.small-event {
+    background-color: var(--bg-secondary);
+}
+
+.buttons button {
+    background-color: var(--bg-secondary);
+}
