@@ -1,18 +1,18 @@
 const events = [
       {
-        image: "../assets/images/WEM_UpcomingEventSample.jpg",
+        image: "../assets/images/WEM_EventsSample.avif",
         alt: "Event 1",
         link: "https://example.com/event1",
         buttonText: "Buy Tickets"
       },
       {
-        image: "../assets/images/logo.png",
+        image: "../assets/logo.png",
         alt: "Event 2",
         link: "https://example.com/event2",
         buttonText: "Buy Tickets"
       },
       {
-        image: "../assets/images/WEM_UpcomingEventSample.jpg",
+        image: "../assets/images/WEM_EventsSample.avif",
         alt: "Event 3",
         link: "https://example.com/event3",
         buttonText: "Buy Tickets"
