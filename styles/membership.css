@@ -1,7 +1,4 @@
 /* removed default padding as each section had different padding*/
-body {
-  padding: 0;
-}
 
 .hero-text {
   font-size: 42px;
@@ -135,7 +132,7 @@ body {
   list-style: none;
   /*using icons instead of default bullets*/
   padding: 0;
-  margin: 0;
+  margin-top: 0.5rem;
 }
 
 .instruction-list li {
@@ -206,4 +203,33 @@ body {
   height: auto;
   border-radius: 10px;
   border: 1px solid black;
+}
+
+/** Pricing Section **/
+
+.price {
+  margin-top: 2rem;
+  /* space above the section */
+  margin-bottom: 2rem;
+  /* space below the section */
+
+  /* Left & right padding only */
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  /* responsive scaling */
+  padding-left: clamp(4rem, 10vw, 12rem);
+  padding-right: clamp(4rem, 10vw, 12rem);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price h2 {
+  margin-bottom: 20 rem;
+  text-align: center;
+}
+
+.pricing-box {
+  
 }
