@@ -1,0 +1,78 @@
+.footer {
+    width: 100%;
+}
+
+/* ─────────── Top Social Bar ─────────── */
+
+.footer-social {
+    background-color: #d6b7ef; /* light purple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.footer-social-text {
+    color: var(--purple-darkest);
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+    background-color: black;
+}
+
+.footer-social-icons a {
+    font-size: 26px;
+    color: #3a145e;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+/* ─────────── Main Footer ─────────── */
+
+.footer-main {
+    background-color: #3a145e; /* dark purple */
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 60px 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    text-decoration: none;
+    color: var(--purple-light);
+}
+
+/* ─────────── Mobile ─────────── */
+
+@media (max-width: 768px) {
+    .footer-social {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+}

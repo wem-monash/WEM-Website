@@ -15,15 +15,24 @@
   styleLink.href = `${basePath}/styles/global-styles.css`;
   head.appendChild(styleLink);
 
-  // 2. Inject Navbar after the page loads
+  // 2. Inject Navbar and Footer after the page loads
   window.addEventListener('DOMContentLoaded', () => {
     const navContainer = document.getElementById('navbar');
     if (navContainer) {
       fetch(`${basePath}/pages/navbar.html`)
-        .then(response => response.text())
-        .then(data => {
-          navContainer.innerHTML = data;
-        });
+          .then(response => response.text())
+          .then(data => {
+            navContainer.innerHTML = data;
+          });
+    }
+    const footerContainer = document.getElementById('footer');
+    if (footerContainer) {
+      fetch(`${basePath}/pages/footer.html`)
+          .then(response => response.text())
+          .then(data => {
+            footerContainer.innerHTML = data;
+          })
     }
   });
+
 })();
