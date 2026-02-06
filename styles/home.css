@@ -356,7 +356,7 @@
     align-items: center;
     padding: 200px 0;
     gap: 40px;
-    background-image: radial-gradient( white,var(--purple-dark));
+    background-image: linear-gradient( white,var(--purple-dark));
     .text {
         width: 500px;
         text-align: center;
