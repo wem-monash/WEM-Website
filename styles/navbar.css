@@ -6,7 +6,8 @@
     align-items: center;
     height: 60px;
     width: 100%;
-    background-color: rgba(54, 21, 89, 0.5);
+    background-color: rgba(54, 21, 89, 0.8);
+    padding: 0 30px;
 }
 
 .nav-logo {
@@ -15,13 +16,14 @@
 }
 
 .logo {
-    width: 30px;
+    width: 40px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -32,5 +34,27 @@
 }
 
 .nav-links a:hover {
-    color: var(--purple-darker);
+    color: var(--purple-light);
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        overflow-y: auto;
+    }
+
+    .nav-links {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 20px;
+    }
 }
