@@ -16,7 +16,7 @@
     --orange-light: #FFEED9;
     --black: #000000;
     --white: #ffffff;
-    --grey: rgb(142, 142, 142);
+    --grey: #8e8e8e;
 
     /* Text */
     --text-primary: var(--black);
@@ -68,6 +68,5 @@ h5 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h5-siz
     h2 { font-size: 24px }
     h3 { font-size: 18px }
     h4 { font-size: 14px }
-    h5 { font-size: 16px }
     body, p { font-size: 14px }
 }
