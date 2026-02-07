@@ -364,6 +364,17 @@
     }
 }
 
+.join-button.black {
+    background-color: var(--black);
+    color: var(--text-secondary);
+}
+
+.join-button.black:hover {
+    background-color: var(--purple-darker);
+    color: var(--text-secondary);
+    border-color: white;
+}
+
 @media (max-width: 768px) {
     .hero-stack {
         gap: 10px;
