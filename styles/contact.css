@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding-top: 0px;
   background-color: white;
-  padding-bottom: 1000px;
 }
 
 .info-cards {
@@ -54,12 +53,12 @@ body {
     height: 300px;
     padding-top: 20px;
 
-    display: flex;               /* make it flex container */
-    flex-direction: column;      /* stack h2 and input vertically */
-    justify-content: center;     /* center vertically in the 300px */
-    align-items: center;         /* center horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    gap: 20px;                   /* space between h2 and input */
+    gap: 20px;   
     box-sizing: border-box;
 }
 
@@ -71,7 +70,7 @@ body {
 .subscribe-items {
     display: grid;
     grid-template-columns: 1fr 100px;
-    gap: 5px;                        /* optional spacing */
+    gap: 5px;
     width: 60%;   
 }
 
@@ -82,17 +81,101 @@ body {
     padding-left: 15px;
 }
 
-.subscribe-button {
+.contact-button {
     border: 2px solid black;
     border-radius: 26px;
     background-color: var(--purple-standard);
     font-weight: 600;
 }
 
-.subscribe-button:hover {
+.contact-button:hover {
     background-color: var(--purple-darker);
     color: var(--text-secondary);
     border-color: white;
     cursor: pointer;
 }
+
+.submit-button {
+    border: 2px solid black;
+    border-radius: 26px;
+    background-color: var(--purple-standard);
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.submit-button:hover {
+    background-color: var(--purple-darker);
+    color: var(--text-secondary);
+    border-color: white;
+    cursor: pointer;
+}
+
+.contact-us-section {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.contact-us-section h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--purple-darkest);
+    margin-bottom: 10px;
+}
+
+.contact-us-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+}
+
+.contact-us-row label {
+    font-weight: 600;
+    color: var(--purple-darkest);
+    text-align: left;
+
+}
+
+.contact-input {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: var(--purple-darker);
+    box-shadow: 0 0 0 3px rgba(109, 53, 166, 0.2);
+}
+
+.contact-us-section textarea.contact-input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .contact-us-section {
+        padding: 30px 20px;
+        margin: 40px 10px;
+    }
+}
+
 
