@@ -36,7 +36,7 @@
   position: absolute;
   top: 110%;
   left: 0;
-  background-color: var(--purple-darkest); /* medium purple */
+  background-color: var(--purple-darker); /* medium purple */
   min-width: 160px;
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -55,7 +55,7 @@
 }
 
 .dropdown-content li a:hover {
-  background-color: var(--purple-darker); /* lighter purple on hover */
+  background-color: var(--purple-dark); /* lighter purple on hover */
 }
 
 /* Show dropdown on hover */
