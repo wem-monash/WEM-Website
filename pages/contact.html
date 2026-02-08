@@ -38,12 +38,31 @@
     </div>
 
     <div class="newsletter-section">
-        <h2 class="newsletter-text">Subscribe to our newsletter</h2>
-        <div class="subscribe-items">
-        <input class="search-bar" type="text" placeholder="Jane@example.com" />
-        <button class="contact-button">Subscribe</button>
+    <h2 class="newsletter-text">Subscribe to our newsletter</h2>
+
+    <form class="subscribe-items"
+          action="https://facebook.us7.list-manage.com/subscribe/post?u=4cccd7bd33529a54e717163f5&amp;id=754104c085&amp;f_id=0098b2e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+          method="post"
+          id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form">
+
+        <input class="search-bar"
+               type="email"
+               name="EMAIL"
+               placeholder="Jane@example.com"
+               required />
+
+        <button class="contact-button" type="submit">
+            Subscribe
+        </button>
+
+         <div id="mce-responses">
+            <div class="response" id="mce-error-response"></div>
+            <div class="response" id="mce-success-response"></div>
         </div>
-    </div>
+
+    </form>
+</div>
 
     <form class="contact-us-section">
     <h2>Get in touch</h2>
@@ -73,5 +92,6 @@
     </div>
 
     <div id="footer"></div>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   </body>
 </html>
