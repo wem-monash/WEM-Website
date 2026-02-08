@@ -48,6 +48,15 @@ body {
     margin-top: 33px;
 }
 
+.link {
+    color: var(--purple-lighter);
+}
+
+.link:hover  {
+    opacity: 0.7;
+
+}
+
 .newsletter-section {
     background-color: var(--purple-light);
     height: 300px;
