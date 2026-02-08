@@ -1,18 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <head>
-  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/navbar.css" />
 </head>
 <body>
   <nav class="main-nav">
     <div class="nav-logo">
-      <img src="../assets/logo.png" class="logo" alt="logo">
+      <img src="../assets/logo.png" class="logo" alt="logo" />
     </div>
     <ul class="nav-links">
       <li><a href="/pages/home.html">Home</a></li>
       <li><a href="/pages/about.html">About</a></li>
       <li><a href="/pages/membership.html">Membership</a></li>
       <li><a href="/pages/events.html">Events</a></li>
-      <li><a href="/pages/industry.html">Industry</a></li>
+
+      <li class="dropdown">
+        <a href="/pages/industry.html" class="dropbtn">Industry</a>
+        <ul class="dropdown-content">
+          <li><a href="/pages/industry.html">Industry</a></li>
+          <li><a href="/pages/industry-guide.html">Industry Guide</a></li>
+        </ul>
+      </li>
+
       <li><a href="/pages/industry.html">Outreach</a></li>
       <li><a href="/pages/contact.html">Contact</a></li>
       <li><a href="/pages/membership.html">Join</a></li>
