@@ -1,0 +1,21 @@
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    background-color: var(--purple-darkest);
+    margin-top: 80px;
+    height: 450px;
+    display: flex;  
+    flex-direction: column;
+    gap: 40px; 
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text-container {
+    width: 900px;
+    justify-content: space-between;
+}
