@@ -5,24 +5,50 @@
     <script src="../assets/global-loader.js"></script>
     <link rel="stylesheet" href="../styles/industry-guide.css" />
   </head>
-  <body style="height: 3000px;">
+
+  <body style="height: 3000px">
     <div id="navbar"></div>
     <div class="page-intro">
       <h1>Industry Guide</h1>
       <div class="intro-text-container">
-      <p>
-        Every year WEM (Women in Engineering at Monash) create a publication to
-        provide students with valuable insights into the engineering industry.
-      </p>
-      <p>
-        WEM collaborates with over 20 companies who cover a wide range of
-        engineering disciplines to deliver this invaluable academic resource.
-        The industry guide covers a range of important topics including
-        information about our sponsor companies, career advice and engineer's
-        stories, extra-curricular and continuous professional development
-        opportunities and WEM’s recap of the year.
-      </p>
+        <p>
+          Every year WEM (Women in Engineering at Monash) create a publication
+          to provide students with valuable insights into the engineering
+          industry.
+        </p>
+        <p>
+          WEM collaborates with over 20 companies who cover a wide range of
+          engineering disciplines to deliver this invaluable academic resource.
+          The industry guide covers a range of important topics including
+          information about our sponsor companies, career advice and engineer's
+          stories, extra-curricular and continuous professional development
+          opportunities and WEM’s recap of the year.
+        </p>
       </div>
     </div>
+
+    <div class="industry-guide-container" style="text-align: center">
+      <h1
+        class="guide-header"
+        style="color: var(--purple-darkest); margin-top: 150px"
+      >
+        2025 Industry Guide
+      </h1>
+      <h2
+        class="guide-instructions"
+        style="color: var(--purple-darkest); margin-top: 15px"
+      >
+        Scroll through the pages below
+      </h2>
+
+      <div class="pdf-book" style="margin-top: 50px;">
+        <button id="prev">❮</button>
+        <canvas id="pdf-canvas"></canvas>
+        <button id="next">❯</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="../assets/scripts/pdf-viewer.js"></script>
   </body>
 </html>

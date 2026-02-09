@@ -19,3 +19,24 @@ p {
     width: 900px;
     justify-content: space-between;
 }
+
+.pdf-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+#pdf-canvas {
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.pdf-book button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--purple-darkest)
+}
