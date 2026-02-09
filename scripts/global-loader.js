@@ -23,6 +23,24 @@
           .then(response => response.text())
           .then(data => {
             navContainer.innerHTML = data;
+
+            // Initialise navbar hamburger menu after injection
+            const hamburger = navContainer.querySelector('.hamburger');
+            const navLinks = navContainer.querySelector('.nav-links');
+
+            if (hamburger && navLinks) {
+              hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+              });
+
+              navContainer.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                  hamburger.classList.remove('active');
+                  navLinks.classList.remove('active');
+                });
+              });
+            }
           });
     }
     const footerContainer = document.getElementById('footer');
