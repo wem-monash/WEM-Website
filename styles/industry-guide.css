@@ -25,6 +25,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  margin-bottom: 18px;
 }
 
 #pdf-canvas {
@@ -39,4 +40,36 @@ p {
   font-size: 32px;
   cursor: pointer;
   color: var(--purple-darkest)
+}
+
+.download-button {
+    border: 2px solid black;
+    border-radius: 26px;
+    background-color: var(--purple-standard);
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--purple-darkest);
+}
+
+.download-button:hover {
+    background-color: var(--purple-darker);
+    color: var(--text-secondary);
+    border-color: white;
+    cursor: pointer;
+}
+
+.guide-bottom-text-container {
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: var(--purple-darkest);
+    font-size: 26px;
 }

@@ -1,4 +1,4 @@
-const url = "../assets/pdf/guide25.pdf";
+const url = "../assets/pdf/WEMguide25.pdf";
 
 let pdfDoc = null;
 let pageNum = 1;
