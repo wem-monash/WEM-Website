@@ -483,6 +483,14 @@
         }
     }
 
+    .hero-img {
+        top: 60px;
+    }
+
+    .hero {
+        padding-bottom: 60px;
+        background-color: rgba(54, 21, 89, 0.8);
+    }
 
 
 }
