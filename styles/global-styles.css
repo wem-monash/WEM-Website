@@ -10,16 +10,18 @@
     --purple-lightest: #FBF2FF;
 
     /* Secondary & Neutrals */
-    --blue-light: #b3c7ff;
-    --orange-light: #ffcc80;
+    --blue: #ABBCFF;
+    --blue-light: #DBE2FF;
+    --orange: #FFC880;
+    --orange-light: #FFEED9;
     --black: #000000;
     --white: #ffffff;
-    --grey: #8e8e8e;
+    --grey: rgb(142, 142, 142);
 
     /* Text */
     --text-primary: var(--black);
     --text-secondary: var(--white);
-    --text-dark-purple: var(--purple-darkest);
+    --text-dark-purple: var(--purple-darker);
     --text-light-purple: var(--purple-lighter);
 
     /* Backgrounds */
@@ -54,9 +56,17 @@ body, p {
     margin: 0;
 }
 
-h1 { font-family: var(--font-heading); font-size: var(--h1-size); line-height: var(--lh-tight); color: var(--text-secondary); margin: 0; }
-h2 { font-family: var(--font-heading); font-size: var(--h2-size); line-height: var(--lh-tight); color: var(--text-primary); margin: 0; }
-h3 { font-family: var(--font-heading); font-size: var(--h3-size); line-height: var(--lh-tight); color: var(--text-dark-purple); margin: 0; }
-h4 { font-family: var(--font-heading); font-size: var(--h4-size); line-height: var(--lh-medium); color: var(--text-primary); margin: 0; }
-h5 { font-family: var(--font-heading); font-size: var(--h5-size); line-height: var(--lh-relaxed); color: var(--text-primary); margin: 0; }
+h1 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h1-size); line-height: var(--lh-tight); color: var(--text-secondary); margin: 0; }
+h2 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h2-size); line-height: var(--lh-tight); color: var(--text-primary); margin: 0; }
+h3 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h3-size); line-height: var(--lh-tight); color: var(--text-dark-purple); margin: 0; }
+h4 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h4-size); line-height: var(--lh-medium); color: var(--text-primary); margin: 0; }
+h5 { font-family: var(--font-heading); font-weight: 400; font-size: var(--h5-size); line-height: var(--lh-relaxed); color: var(--text-primary); margin: 0; }
 
+
+@media (max-width: 768px) {
+    h1 { font-size: 36px }
+    h2 { font-size: 24px }
+    h3 { font-size: 18px }
+    h4 { font-size: 14px }
+    body, p { font-size: 14px }
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e80f64ad-9e83-4fbf-9f70-874dea9ea24e" name="Changes" comment="change sponsorship button to black">
+      <change afterPath="$PROJECT_DIR$/scripts/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/global-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/global-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/membership.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/membership.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navbar.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;clairezhangXD&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wem-monash/WEM-Website.git&quot;,
+    &quot;accountId&quot;: &quot;afc92146-2b6c-45d1-bb7d-f3ddc4284688&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="38Qkbzx39yufDiX88iN7P0WxDvJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/Documents/FIT3077",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\WEM-Website\scripts" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e80f64ad-9e83-4fbf-9f70-874dea9ea24e" name="Changes" comment="" />
+      <created>1768739258407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768739258407</updated>
+      <workItem from="1768739261237" duration="313000" />
+      <workItem from="1768974947999" duration="6473000" />
+      <workItem from="1769159668106" duration="719000" />
+      <workItem from="1769247552519" duration="536000" />
+      <workItem from="1769395286058" duration="664000" />
+      <workItem from="1770468369310" duration="4617000" />
+      <workItem from="1770603309959" duration="3905000" />
+    </task>
+    <task id="LOCAL-00001" summary="create repo and file directory">
+      <option name="closed" value="true" />
+      <created>1768739560634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768739560634</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create global-styles file with design system text and colours">
+      <option name="closed" value="true" />
+      <created>1768981915958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768981915958</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create global-loader.js to load fonts, global-css and navbar across all files&#10;&#10;just include:&#10;&lt;head&gt;&#10;  &lt;script src=&quot;../assets/global-loader.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;">
+      <option name="closed" value="true" />
+      <created>1768982235604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768982235604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create base navbar and style, needs better styling later">
+      <option name="closed" value="true" />
+      <created>1768982279319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768982279319</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test home page, working">
+      <option name="closed" value="true" />
+      <created>1768982305602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1768982305602</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change sponsorship button to black">
+      <option name="closed" value="true" />
+      <created>1770480348255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770480348255</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create repo and file directory" />
+    <MESSAGE value="create global-styles file with design system text and colours" />
+    <MESSAGE value="create global-loader.js to load fonts, global-css and navbar across all files&#10;&#10;just include:&#10;&lt;head&gt;&#10;  &lt;script src=&quot;../assets/global-loader.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;" />
+    <MESSAGE value="create base navbar and style, needs better styling later" />
+    <MESSAGE value="test home page, working" />
+    <MESSAGE value="change sponsorship button to black" />
+    <option name="LAST_COMMIT_MESSAGE" value="change sponsorship button to black" />
+  </component>
+</project>
