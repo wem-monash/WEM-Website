@@ -142,15 +142,19 @@
 
 .signature-img-box {
     width: 420px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     background-color: var(--purple-light);
-    justify-self: center;
-    height: 330px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
     border: 2px solid black;
 }
 
 .signature-img-box img {
+    object-fit: cover;
     width: 100%;
     border-radius: 15px;
     border: 1px solid black;
