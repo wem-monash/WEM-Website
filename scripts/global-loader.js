@@ -2,8 +2,6 @@
   const head = document.head;
 
   // 1. Inject Styles & Fonts
-  const isSubPage = window.location.pathname.includes('/pages/');
-  const basePath = isSubPage ? '../' : '';
 
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
@@ -12,14 +10,14 @@
 
   const styleLink = document.createElement('link');
   styleLink.rel = 'stylesheet';
-  styleLink.href = `${basePath}/styles/global-styles.css`;
+  styleLink.href = '../styles/global-styles.css';
   head.appendChild(styleLink);
 
   // 2. Inject Navbar and Footer after the page loads
   window.addEventListener('DOMContentLoaded', () => {
     const navContainer = document.getElementById('navbar');
     if (navContainer) {
-      fetch(`${basePath}/pages/navbar.html`)
+      fetch('./navbar.html')
           .then(response => response.text())
           .then(data => {
             navContainer.innerHTML = data;
@@ -45,7 +43,7 @@
     }
     const footerContainer = document.getElementById('footer');
     if (footerContainer) {
-      fetch(`${basePath}/pages/footer.html`)
+      fetch('./footer.html')
           .then(response => response.text())
           .then(data => {
             footerContainer.innerHTML = data;
