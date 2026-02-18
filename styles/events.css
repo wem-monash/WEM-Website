@@ -243,10 +243,20 @@ img {
 
   .upcoming-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
+    max-height: 300px;
     margin: 0 auto;
   }
+
+  .upcoming-card-img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  max-height: 200px;
+  border: 2px solid black;
+  object-fit: cover;
+}
 
   .signature-grid {
     grid-template-columns: 1fr;
@@ -267,7 +277,7 @@ img {
     text-align: left;
   }
 
-  
+
   .carousel-track img {
     width: 90%;
     max-width: 350px;
