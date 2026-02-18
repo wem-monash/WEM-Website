@@ -243,3 +243,60 @@
     width: 100%; 
     margin: 0 0; 
 }
+
+
+/* for mobile and smaller screens */
+
+@media (max-width: 768px) {
+
+  .upcoming,
+  .signature {
+    padding: 20px;
+  }
+
+
+  .upcoming-cards-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .upcoming-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+ 
+  .signature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .signature-box,
+  .signature-img-box {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+ 
+  .signature-box {
+    padding: 20px;
+    text-align: left;
+  }
+
+
+  .carousel-track img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  
+  .events-hero-stack h1 {
+    font-size: 32px;
+  }
+
+}
