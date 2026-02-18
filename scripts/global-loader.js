@@ -17,7 +17,7 @@
   window.addEventListener('DOMContentLoaded', () => {
     const navContainer = document.getElementById('navbar');
     if (navContainer) {
-      fetch('./navbar.html')
+      fetch('../pages/navbar.html')
           .then(response => response.text())
           .then(data => {
             navContainer.innerHTML = data;
@@ -43,7 +43,7 @@
     }
     const footerContainer = document.getElementById('footer');
     if (footerContainer) {
-      fetch('./footer.html')
+      fetch('../pages/footer.html')
           .then(response => response.text())
           .then(data => {
             footerContainer.innerHTML = data;
