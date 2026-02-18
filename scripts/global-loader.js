@@ -5,33 +5,30 @@
   const isSubPage = window.location.pathname.includes('/pages/');
   const basePath = isSubPage ? '../' : '';
 
-  // Detect if we are on GitHub Pages sub-path (e.g., /WEM-Website/)
+  // FIXED REPO DETECTION:
+  // Works on GitHub Pages AND your local WebStorm/Live Server
   const isGitHubPages = window.location.hostname.includes('github.io');
-  const repoName = isGitHubPages ? '/WEM-Website' : '';
+  const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-  // 2. INJECT FONTS
-  const fontLink = document.createElement('link');
-  fontLink.rel = 'stylesheet';
-  fontLink.href = 'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;600;700&display=swap';
-  head.appendChild(fontLink);
+  // On local servers, the repo name is often part of the URL path (e.g., /WEM-Website/index.html)
+  const repoName = (isGitHubPages || isLocalHost) ? '/WEM-Website' : '';
 
-  // 3. INJECT STYLES
-  const styleLink = document.createElement('link');
-  styleLink.rel = 'stylesheet';
-  styleLink.href = `${basePath}styles/global-styles.css`;
-  head.appendChild(styleLink);
+  // 2. INJECT FONTS & CSS
+  const links = [
+    'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;600;700&display=swap',
+    `${basePath}styles/global-styles.css`,
+    `${basePath}styles/navbar.css`,
+    `${basePath}styles/footer.css`
+  ];
 
-  const styleNavbar = document.createElement('link');
-  styleNavbar.rel = 'stylesheet';
-  styleNavbar.href = `${basePath}styles/navbar.css`;
-  head.appendChild(styleNavbar);
+  links.forEach(href => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    head.appendChild(link);
+  });
 
-  const styleFooter = document.createElement('link');
-  styleFooter.rel = 'stylesheet';
-  styleFooter.href = `${basePath}styles/footer.css`;
-  head.appendChild(styleFooter);
-
-  // 4. INJECT NAVBAR & FOOTER
+  // 3. INJECT NAVBAR & FOOTER
   window.addEventListener('DOMContentLoaded', () => {
     // Inject Navbar
     const navContainer = document.getElementById('navbar');
@@ -39,10 +36,10 @@
       fetch(`${basePath}pages/navbar.html`)
         .then(res => res.text())
         .then(data => {
-          // Automatically prefix links with repoName for GitHub Pages
-          navContainer.innerHTML = data.replace(/href="\//g, `href="${repoName}/`);
-          // Fix images too
-          navContainer.innerHTML = navContainer.innerHTML.replace(/src="\//g, `src="${repoName}/`);
+          // One-step replacement for all links and images
+          let processedData = data.replace(/href="\//g, `href="${repoName}/`)
+            .replace(/src="\//g, `src="${repoName}/`);
+          navContainer.innerHTML = processedData;
           setupHamburger(navContainer);
         });
     }
@@ -53,8 +50,9 @@
       fetch(`${basePath}pages/footer.html`)
         .then(res => res.text())
         .then(data => {
-          footerContainer.innerHTML = data.replace(/href="\//g, `href="${repoName}/`);
-          footerContainer.innerHTML = footerContainer.innerHTML.replace(/src="\//g, `src="${repoName}/`);
+          let processedData = data.replace(/href="\//g, `href="${repoName}/`)
+            .replace(/src="\//g, `src="${repoName}/`);
+          footerContainer.innerHTML = processedData;
         });
     }
   });
