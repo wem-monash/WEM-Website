@@ -21,6 +21,16 @@
   styleLink.href = `${basePath}styles/global-styles.css`;
   head.appendChild(styleLink);
 
+  const styleNavbar = document.createElement('link');
+  styleNavbar.rel = 'stylesheet';
+  styleNavbar.href = `${basePath}styles/navbar.css`;
+  head.appendChild(styleNavbar);
+
+  const styleFooter = document.createElement('link');
+  styleFooter.rel = 'stylesheet';
+  styleFooter.href = `${basePath}styles/footer.css`;
+  head.appendChild(styleFooter);
+
   // 4. INJECT NAVBAR & FOOTER
   window.addEventListener('DOMContentLoaded', () => {
     // Inject Navbar
