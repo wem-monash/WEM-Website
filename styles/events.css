@@ -1,273 +1,253 @@
 
-.events-hero{
-    position: relative;
-    display: flex;
-    justify-content: center;
-
+/* HERO SECTION */
+.events-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.events-hero-img{
-    
-    width: 100%;
-    filter: brightness(0.75);
+.events-hero-img {
+  width: 100%;
+  filter: brightness(0.75);
 }
 
 .events-hero-stack {
-    position: absolute;
-    top: 60px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
 
 
 
 
- /* upcoming events */
+/* UPCOMING EVENTS */
 
- .upcoming {
-    background-color: var(--bg-primary);
-    padding: 60px;
+.upcoming {
+  background-color: var(--bg-primary);
+  padding: 60px;
 }
 
 .upcoming-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-
 .upcoming-cards-row {
-    /* display: flex;
-    flex-direction: row; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
 }
 
 .upcoming-card {
-    background-color: var(--purple-dark);
-    padding: 20px;
-    border-radius: 15px;
-    width: 350px;
-    height: 420px;
+  background-color: var(--purple-dark);
+  padding: 20px;
+  border-radius: 15px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  width: 350px;
+  height: 420px;
 
-    border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  border: 2px solid black;
 }
 
 .upcoming-card-img {
-    width: 100%;
-    border-radius: 10px;
-    height: 350px;
-    border: 2px solid black;
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;
+  border: 2px solid black;
+  object-fit: cover;
 }
 
-
 .upcoming-card button {
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    gap: 30px;
-    height: 100px;
-    width: 150px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 
+  height: 50px;
+  width: 150px;
 
-
-    border: 2px solid black;
-    font-weight: bold;
-    background-color: whitesmoke;
-    color: var(--purple-darkest);
-
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: var(--purple-darkest);
 }
 
 .upcoming-card button:hover {
-    background-color: var(--purple-light);
+  background-color: var(--purple-light);
 }
 
 
-
-
-/* signature events */
+/* SIGNATURE EVENTS */
 
 .signature {
-    padding: 60px;
-    background-color: var(--bg-lavender);
+  padding: 60px;
+  background-color: var(--bg-lavender);
 }
 
 .signature-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .signature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    gap: 25px;
-    justify-items: center;
-    margin:0 auto;
-    align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+  margin: 0 auto;
+  align-items: start;
 }
 
+.signature-box {
+  width: 420px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--purple-light);
 
-.signature-box{
-    width: 420px;
-    padding: 30px;
-    border-radius: 15px;
-    background-color: var(--purple-light);
-    height: 310px;
-    border: 2px solid black;
+  height: 310px;
+  border: 2px solid black;
 
-/*     
-    display: flex;
-    flex-direction: column; */
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
-
-
-
-
+  text-align: justify;
 }
 
 .signature-img-box {
-    width: 420px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: var(--purple-light);
+  width: 420px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--purple-light);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 310px;
-    border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 310px;
+  border: 2px solid black;
 }
 
 .signature-img-box img {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px;
-    border: 1px solid black;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 
 
 
-/* events carousel */
+/* CAROUSEL */
 
-.carousel {
-    margin-top: 30px;
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-    padding: 60px;
-    /* background-color: var(--bg-lavender); */
-    gap: 20px;
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-track {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    /* background-color: var(--bg-lavender ); */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-    padding: 10px;
-
+  padding: 10px;
 }
 
 .carousel-track::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .carousel-track img {
-    width: 900px;
-    height: 600px;
+  width: 900px;
+  height: 600px;
 
+  border-radius: 10px;
+  object-fit: cover;
 
-    border-radius: 10px;
-    object-fit: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
 
-    scroll-snap-align: center;
-    flex-shrink: 0;
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
-
-
-/* buttons for carousel */
-.carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* background-color: var(--bg-lavender); */
-}
+/* Carousel Buttons */
 
 .carousel-btn {
-    background: transparent;
-    color: black;
-    font-size: xx-large;
-    border: none;
-    font-size: 30px;
+  background: transparent;
+  color: black;
+  font-size: 30px;
 
-    width: 60px;
-    height: 80px;
-    border-radius: 20%;
+  width: 60px;
+  height: 80px;
+  border-radius: 20%;
 
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 .carousel-btn:hover {
-    background: var(--purple-dark);
+  background: var(--purple-dark);
 }
 
 
 
+
+/* DIVIDER */
 .divider {
-    border: none; 
-    height: 2px; 
-    background-color: var(--purple-darkest); 
-    width: 100%; 
-    margin: 0 0; 
+  border: none;
+  height: 2px;
+  background-color: var(--purple-darkest);
+  width: 100%;
+  margin: 0;
 }
 
 
-/* for mobile and smaller screens */
 
+
+/* Global image sizing*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* these styles to adapt to the smaller screens */
 @media (max-width: 768px) {
 
+  /* Reduce padding */
   .upcoming,
   .signature {
     padding: 20px;
   }
-
 
   .upcoming-cards-row {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-
   .upcoming-card {
     width: 100%;
     max-width: 350px;
+    height: auto;
     margin: 0 auto;
   }
 
- 
   .signature-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -281,22 +261,27 @@
     height: auto;
   }
 
- 
+
   .signature-box {
     padding: 20px;
     text-align: left;
   }
 
-
+  
   .carousel-track img {
     width: 90%;
     max-width: 350px;
     height: auto;
   }
 
-  
   .events-hero-stack h1 {
     font-size: 32px;
   }
 
+
+  .carousel-btn {
+    width: 40px;
+    height: 60px;
+    font-size: 24px;
+  }
 }
