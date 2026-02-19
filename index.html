@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="../assets/global-loader.js"></script>
-    <link rel="stylesheet" href="../styles/home.css">
+    <title>WEM</title>
+    <script src="scripts/global-loader.js"></script>
+    <link rel="stylesheet" href="styles/home.css">
   </head>
   <body>
     <div id="navbar"></div>
     <section class="hero">
-      <img class="hero-img" src="../assets/images/hero.avif" alt="group high tea">
+      <img class="hero-img" src="assets/images/hero.avif" alt="group high tea">
       <div class="hero-stack">
         <p class="hero-text">
           Welcome to
@@ -30,24 +31,24 @@
       </div>
       <div class="mission-images">
         <div class="mission-img-border left">
-          <img class="mission-img" src="../assets/images/club-cocktail-1.avif" alt="dancing at clubs cocktail night">
+          <img class="mission-img" src="assets/images/club-cocktail-1.avif" alt="dancing at clubs cocktail night">
         </div>
         <div class="mission-img-border middle">
-          <img class="mission-img" src="../assets/images/igl-1.avif" alt="group industry guide launch">
+          <img class="mission-img" src="assets/images/igl-1.avif" alt="group industry guide launch">
         </div>
         <div class="mission-img-border right">
-          <img class="mission-img" src="../assets/images/igl-3.avif" alt="industry guide launch stall">
+          <img class="mission-img" src="assets/images/igl-3.avif" alt="industry guide launch stall">
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>About WEM</h2>
       <div class="about-grid">
         <div class="about-cell text">
           <h3>Who are we?</h3>
           <p>
-            Women in Engineering at Monash (WEM) is a student-run society that aims to inspire and support
+            Women in Engineering at Monash (WEM) is a student run society that aims to inspire and support
             women-identifying students studying in STEM.
           </p>
           <p>
@@ -55,16 +56,16 @@
             from 20 industry leading sponsors in 2025.
           </p>
           <p>
-            Although events are primarily targeted towards the women-identifying minority, WEM values inclusivity and
+            Although events are primarily targeted towards the women&ndash;identifying minority, WEM values inclusivity and
             welcomes all STEM students to participate.
           </p>
         </div>
         <div class="about-cell">
-          <img class="about-logo" src="../assets/logo.png" alt="logo">
+          <img class="about-logo" src="assets/logo.png" alt="logo">
         </div>
         <div class="about-cell">
           <div class="about-img-border">
-            <img class="about-img" src="../assets/images/high-tea-1.avif" alt="high tea networking">
+            <img class="about-img" src="assets/images/high-tea-1.avif" alt="high tea networking">
           </div>
         </div>
         <div class="about-cell text">
@@ -87,15 +88,15 @@
         <h3>Our objectives</h3>
         <div class="objectives-grid">
           <div class="objectives-cell top-left">
-            <img class="objectives-icon" src="../assets/icons/student-support.svg" alt="icon">
+            <img class="objectives-icon" src="assets/icons/student-support.svg" alt="icon">
             <h2>Student Support</h2>
             <p>
-              Provide community, guidance, and resources that empower women‑identifying engineering students throughout
+              Provide community, guidance, and resources that empower women&ndash;identifying engineering students throughout
               university and early career stages
             </p>
           </div>
           <div class="objectives-cell top-right">
-            <img class="objectives-icon" src="../assets/icons/inclusive-culture.svg" alt="icon">
+            <img class="objectives-icon" src="assets/icons/inclusive-culture.svg" alt="icon">
             <h2>Inclusive Culture</h2>
             <p>
               Promote gender diversity and foster respectful, equitable relationships across students, staff, and
@@ -103,15 +104,15 @@
             </p>
           </div>
           <div class="objectives-cell bottom-left">
-            <img class="objectives-icon" src="../assets/icons/awareness.svg" alt="icon">
+            <img class="objectives-icon" src="assets/icons/awareness.svg" alt="icon">
             <h2>Awareness & Advocacy</h2>
             <p>
-              Increase understanding of gender‑based challenges in engineering and advocate for meaningful
+              Increase understanding of gender&ndash;based challenges in engineering and advocate for meaningful
               cultural change
             </p>
           </div>
           <div class="objectives-cell bottom-right">
-            <img class="objectives-icon" src="../assets/icons/future-inspo.svg" alt="icon">
+            <img class="objectives-icon" src="assets/icons/future-inspo.svg" alt="icon">
             <h2>Future Inspiration</h2>
             <p>
               Encourage and motivate the next generation of women to pursue and thrive in engineering careers
@@ -125,19 +126,25 @@
       <h2>Our portfolios</h2>
       <div class="portfolios-stack">
         <div class="portfolio outreach">
-          <img class="portfolio-img" src="../assets/images/outreach-1.avif" alt="outreach image">
+          <img class="portfolio-img" src="assets/images/outreach-1.avif" alt="outreach image">
           <h2>Outreach</h2>
-          <button class="portfolio-button">View Portfolio</button>
+          <a href="./pages/outreach.html">
+            <button class="portfolio-button">View Portfolio</button>
+          </a>
         </div>
         <div class="portfolio industry">
-          <img class="portfolio-img" src="../assets/images/high-tea-3.avif" alt="industry image">
+          <img class="portfolio-img" src="assets/images/high-tea-3.avif" alt="industry image">
           <h2>Industry</h2>
-          <button class="portfolio-button">View Portfolio</button>
+          <a href="./pages/industry.html">
+            <button class="portfolio-button">View Portfolio</button>
+          </a>
         </div>
         <div class="portfolio events">
-          <img class="portfolio-img" src="../assets/images/cocktail-1.avif" alt="events image">
+          <img class="portfolio-img" src="assets/images/cocktail-1.avif" alt="events image">
           <h2>Events</h2>
-          <button class="portfolio-button">View Portfolio</button>
+          <a href="./pages/events.html">
+            <button class="portfolio-button">View Portfolio</button>
+          </a>
         </div>
       </div>
     </section>
@@ -145,12 +152,16 @@
     <section class="join">
       <div class="join-img-border">
 
-        <img class="join-img" src="../assets/images/join-us.avif" alt="join us image">
+        <img class="join-img" src="assets/images/join-us.avif" alt="join us image">
       </div>
       <h2>Join our community today!</h2>
       <div class="join-buttons">
-        <button class="join-button">Membership</button>
-        <button class="join-button">Recruitment</button>
+        <a href="./pages/membership.html">
+          <button class="join-button">Membership</button>
+        </a>
+        <a href="./pages/recruitment.html">
+          <button class="join-button">Recruitment</button>
+        </a>
       </div>
     </section>
 
@@ -180,13 +191,13 @@
         REPLACE THE [sponsor-logo.avif] with the sponsor logo image name
         -->
           <div class="sponsor-cell platinum">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell platinum">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell platinum">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
         </div>
       </div>
@@ -206,13 +217,13 @@
         -->
 
           <div class="sponsor-cell gold">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell gold">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell gold">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
         </div>
       </div>
@@ -230,13 +241,13 @@
           REPLACE THE [sponsor-logo.avif] with the sponsor logo image name
           -->
           <div class="sponsor-cell silver">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell silver">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
           <div class="sponsor-cell silver">
-            <img class="sponsor-img" src="../assets/logo.png" alt="sponsor image">
+            <img class="sponsor-img" src="assets/logo.png" alt="sponsor image">
           </div>
         </div>
       </div>
@@ -244,7 +255,9 @@
 
     <section class="sponsorship">
       <h2 class="text">Interested in supporting women in engineering?</h2>
-      <button class="join-button">Sponsor us</button>
+      <a href="./pages/industry.html">
+        <button class="join-button black">Sponsor us</button>
+      </a>
     </section>
     <div id="footer"></div>
   </body>
