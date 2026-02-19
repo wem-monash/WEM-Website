@@ -1,12 +1,16 @@
-/* removed default padding as each section had different padding*/
 body {
-  padding: 0;
+  margin: 0;
 }
+
+.hero {
+  padding-top: 100px;
+}
+
 
 .hero-text {
   font-size: 42px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* grid container. */
@@ -135,7 +139,7 @@ body {
   list-style: none;
   /*using icons instead of default bullets*/
   padding: 0;
-  margin: 0;
+  margin-top: 2rem;
 }
 
 .instruction-list li {
@@ -143,6 +147,7 @@ body {
   align-items: center;
   gap: 20px;
   margin-bottom: 12px;
+  line-height: 36px;
 }
 
 .list-icon {
@@ -152,7 +157,8 @@ body {
   flex-shrink: 0;
 }
 
-.join-button {
+.join-button,
+.price-join-button {
   display: inline-flex;
   /* icon + text in one row */
   align-items: center;
@@ -171,9 +177,6 @@ body {
   width: 1.5em;
   height: 1.5em;
   flex-shrink: 0;
-}
-
-.join-button svg {
   /*lil smooth transition on hover*/
   transition: transform 0.2s ease;
 }
@@ -183,7 +186,8 @@ body {
   transform: translateX(2px);
 }
 
-.join-button:hover {
+.join-button:hover,
+.price-join-button:hover {
   background-color: var(--purple-darkest);
   color: var(--text-secondary);
   cursor: pointer;
@@ -206,4 +210,91 @@ body {
   height: auto;
   border-radius: 10px;
   border: 1px solid black;
+}
+
+/** Pricing Section **/
+
+.price {
+  margin-top: 1rem;
+  /* space above the section */
+  margin-bottom: 2rem;
+  /* space below the section */
+
+  /* Left & right padding only */
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  padding-top: 3rem;
+  /* inner space at top */
+  padding-bottom: 4rem;
+  /* inner space at bottom */
+
+  /* responsive scaling */
+  padding-left: clamp(4rem, 10vw, 12rem);
+  padding-right: clamp(4rem, 10vw, 12rem);
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.price h2 {
+  text-align: center;
+}
+
+.pricing-box-border {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--orange-light);
+  padding: 11px;
+}
+
+.pricing-box {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--purple-lightest);
+  padding: 2rem 3rem 2rem 3rem;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.MSAplus-mem,
+.non-MSAplus-mem {
+  text-align: center;
+}
+
+.MSAplus-mem h4,
+.non-MSAplus-mem h4 {
+  margin: 0;
+  color: var(--purple-darkest);
+}
+
+.MSAplus-mem P,
+.non-MSAplus-mem p {
+  color: #EDA113;
+}
+
+.price-join-button svg {
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+  transition: transform 180ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.price-join-button:hover svg {
+  /* lil right movement on hover */
+  transform: translateX(2px) scale(1.05);
+}
+
+.price-footnote {
+  font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+  line-height: 1.4;
+  color: #6b7280;
 }
