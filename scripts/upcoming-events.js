@@ -1,29 +1,10 @@
-const events = [
-      {
-        image: "../assets/images/WEM_EventsSample.avif",
-        alt: "Event 1",
-        link: "https://example.com/event1",
-        buttonText: "Buy Tickets"
-      },
-      {
-        image: "../assets/logo.png",
-        alt: "Event 2",
-        link: "https://example.com/event2",
-        buttonText: "Buy Tickets"
-      },
-      {
-        image: "../assets/images/WEM_EventsSample.avif",
-        alt: "Event 3",
-        link: "https://example.com/event3",
-        buttonText: "Buy Tickets"
-      }
-    ];
 
+// Add events inside this list, using the format shown below
     // GUIDELINES FOR ADDING EVENTS: 
     // to add new event, add to the above events array, using this format:
     /*
       { 
-        image: "path/to/image.jpg",
+        image: "../path/to/image.jpg",
         alt: "Event Description",
         link: "https://link-to-event-or-ticket.com",  
         buttonText: "Buy Tickets"
@@ -31,6 +12,12 @@ const events = [
     */ 
 
       // Happy Event Adding! :) :) (give Jena free tickets hehe)
+
+const events = [
+
+    ];
+
+
 
 
     function renderUpcomingEvents() {
@@ -41,11 +28,20 @@ const events = [
 
       // If there are no upcoming events,showing this message instead
       if (events.length === 0) {
+        no_events_message = document.createElement("div");
+        no_events_message.className = "no-upcoming-events-card";
+
         const message = document.createElement("p");
+
+
         message.textContent = "No upcoming events at the moment. Please check back later.";
         message.style.textAlign = "center";
         message.style.color = "var(--text-secondary)";
-        container.appendChild(message);
+
+
+        no_events_message.appendChild(message);
+        container.appendChild(no_events_message);
+
         return;
       }
 
