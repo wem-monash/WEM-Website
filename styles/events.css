@@ -84,6 +84,25 @@
   color: var(--purple-darkest);
 }
 
+
+.no-upcoming-events-card {
+  background-color: var(--purple-dark);
+  padding: 20px;
+  border-radius: 15px;
+
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+
+  border: 2px solid black;
+}
+
 .upcoming-card button:hover {
   background-color: var(--purple-light);
 }
@@ -257,6 +276,8 @@ img {
   border: 2px solid black;
   object-fit: cover;
 }
+
+  
 
   .signature-grid {
     grid-template-columns: 1fr;
