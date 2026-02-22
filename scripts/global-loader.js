@@ -11,7 +11,7 @@
   const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
   // On local servers, the repo name is often part of the URL path (e.g., /WEM-Website/index.html)
-  const repoName = (isGitHubPages || isLocalHost) ? '/WEM-Website' : '';
+const repoName = window.location.pathname.startsWith('/WEM-Website') ? '/WEM-Website' : '';
 
   // 2. INJECT FONTS & CSS
   const links = [
