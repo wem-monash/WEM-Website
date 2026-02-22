@@ -38,40 +38,85 @@
     </div>
 
     <div class="newsletter-section">
-        <h2 class="newsletter-text">Subscribe to our newsletter</h2>
-        <div class="subscribe-items">
-        <input class="search-bar" type="text" placeholder="Jane@example.com" />
-        <button class="contact-button">Subscribe</button>
-        </div>
-    </div>
+    <h2 class="newsletter-text">Subscribe to our newsletter</h2>
 
-    <form class="contact-us-section">
+    <form class="subscribe-items"
+          action="https://facebook.us7.list-manage.com/subscribe/post?u=4cccd7bd33529a54e717163f5&amp;id=754104c085&amp;f_id=0098b2e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+          method="post"
+          id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form">
+
+        <input class="search-bar"
+               type="email"
+               name="EMAIL"
+               placeholder="Jane@example.com"
+               required />
+
+        <button class="contact-button" type="submit">
+            Subscribe
+        </button>
+
+         <div id="mce-responses">
+            <div class="response" id="mce-error-response"></div>
+            <div class="response" id="mce-success-response"></div>
+        </div>
+
+    </form>
+</div>
+
+    <form action="https://formspree.io/f/xykdnbll" method="POST" class="contact-us-section">
     <h2>Get in touch</h2>
 
     <div class="contact-us-row">
         <label for="fullname">Full name:</label>
-        <input id="fullname" class="contact-input" type="text" placeholder="Firstname Lastname" />
+        <input name="Full name:" id="fullname" class="contact-input" type="text" placeholder="Firstname Lastname" required/>
     </div>
 
     <div class="contact-us-row">
         <label for="email">Email:</label>
-        <input id="email" class="contact-input" type="email" placeholder="Jane@example.com" />
+        <input name="Email:" id="email" class="contact-input" type="email" placeholder="Jane@example.com" required/>
     </div>
 
     <div class="contact-us-row">
         <label for="subject">Subject:</label>
-        <input id="subject" class="contact-input" type="text" placeholder="Hi WEM!" />
+        <input name="Subject:" id="subject" class="contact-input" type="text" placeholder="Hi WEM!" required/>
     </div>
 
     <div class="contact-us-row">
         <label for="message">Message:</label>
-        <textarea id="message" class="contact-input" placeholder="I am reaching out to learn more about..."></textarea>
+        <textarea name="Message:" id="message" class="contact-input" placeholder="I am reaching out to learn more about..." required></textarea>
     </div>
 
     <button type="submit" class="submit-button">Submit</button>
     </form> 
     </div>
 
+    <div id="form-message" style="color: purple; margin-top: 3px; text-align: center;"></div>
+    <script>
+      const form = document.querySelector(".contact-us-section");
+      const messageDiv = document.getElementById("form-message");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent page reload
+
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if(response.ok) {
+            messageDiv.innerText = "Thank you! Your message has been sent.";
+            form.reset();
+          } else {
+            messageDiv.innerText = "Oops! There was a problem sending your message.";
+          }
+        });
+      });
+    </script>
+
     <div id="footer"></div>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   </body>
 </html>
