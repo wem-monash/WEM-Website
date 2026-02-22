@@ -1,0 +1,137 @@
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    background-color: var(--purple-darkest);
+    margin-top: 80px;
+    height: 450px;
+    display: flex;  
+    flex-direction: column;
+    gap: 40px; 
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text-container {
+    width: 900px;
+    justify-content: space-between;
+}
+
+.pdf-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+#pdf-canvas {
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.pdf-book button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--purple-darkest)
+}
+
+.download-button {
+    border: 2px solid black;
+    border-radius: 26px;
+    background-color: var(--purple-standard);
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--purple-darkest);
+}
+
+.download-button:hover {
+    background-color: var(--purple-darker);
+    color: var(--text-secondary);
+    border-color: white;
+    cursor: pointer;
+}
+
+.guide-bottom-text-container {
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: var(--purple-darkest);
+    font-size: 26px;
+}
+
+.pdf-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.pdf-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pdf-gallery::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.pdf-gallery a {
+  flex: 0 0 auto; /* keep items their size */
+  text-align: center;
+}
+
+.pdf-gallery img {
+  width: 150px; /* smaller cover size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.pdf-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+
+  .pdf-gallery {
+    gap: 14px;              /* tighter spacing */
+    padding: 16px 12px;     /* side breathing room */
+    scroll-snap-type: x mandatory; /* smooth snap */
+  }
+
+  .pdf-gallery a {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .pdf-gallery img {
+    width: 120px;           /* smaller covers on phone */
+    border-radius: 6px;
+  }
+
+  .pdf-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+}

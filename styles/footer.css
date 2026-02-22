@@ -5,7 +5,7 @@
 /* ─────────── Top Social Bar ─────────── */
 
 .footer-social {
-    background-color: #d6b7ef; /* light purple */
+    background-color: var(--purple-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,24 +20,29 @@
 .footer-social-icons {
     display: flex;
     gap: 20px;
-    background-color: black;
 }
 
-.footer-social-icons a {
-    font-size: 26px;
-    color: #3a145e;
+.footer-social-icons img {
+    width: 50px;
+    filter: invert(13%) sepia(41%) saturate(2879%) hue-rotate(250deg) brightness(89%) contrast(105%);
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.footer-social-icons a:hover {
+.footer-social-icons img.instagram {
+    width: 44px;
+}
+
+.footer-social-icons img:hover {
     transform: scale(1.15);
     opacity: 0.8;
+    color: var(--white);
+    cursor: pointer;
 }
 
 /* ─────────── Main Footer ─────────── */
 
 .footer-main {
-    background-color: #3a145e; /* dark purple */
+    background-color: var(--purple-darkest);
     display: flex;
     justify-content: center;
     gap: 120px;
