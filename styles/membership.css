@@ -11,6 +11,7 @@ body {
   font-size: 42px;
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 /* grid container. */
@@ -19,8 +20,8 @@ body {
   padding: clamp(10px, 5vw, 40px) clamp(20px, 10vw, 120px);
   /*clamp top and bottom padding at 10px min, and 50px max, and scales with 5% view port*/
   /*clamp left and right at 20px min and 120px max with 10% vw scale*/
-  gap: clamp(24px, 3vw, 30px);
-  /*adjust gap between rows as screen resizes with 24 as min and 30 as max growing 10% of view port*/
+  gap: clamp(24px, 1vw, 30px);
+  /*adjust gap between rows as screen resizes with 24 as min and 30 as max growing 3% of view port*/
   max-width: 1600px;
   /*clamed the wdith to make sure content isnt tiny and streched across in large screens*/
   margin: 0 auto;
@@ -31,7 +32,7 @@ body {
 }
 
 /* medium screens will have two columns*/
-@media (min-width: 460px) {
+@media (min-width: 600px) {
   .reasons-grid {
     grid-template-columns: repeat(2, minmax(200px, 420px));
     justify-content: center;
@@ -47,7 +48,7 @@ body {
 
 /* contanier for each reason*/
 .reason-cell {
-  padding: 20px 15px;
+  padding: 15px 15px;
   /* stack elements vertically*/
   display: flex;
   flex-direction: column;
@@ -296,5 +297,12 @@ body {
 .price-footnote {
   font-size: clamp(0.7rem, 1.8vw, 0.85rem);
   line-height: 1.4;
+  color: #6b7280;
+}
+
+.credits {
+  display: block;
+  text-align: center;
+  font-size: 0.7rem;
   color: #6b7280;
 }
