@@ -7,13 +7,14 @@
 </head>
 
 <body>
-    <header class="hero">
-        <div id="navbar"></div>
+    <!--navbar-->
+    <div id="navbar"></div>
+    <div class="hero">
         <!--Heading-->
         <h2 class="hero-text">
             Why Join WEM?
         </h2>
-    </header>
+    </div>
 
     <main>
         <!--grid of 4 reasons-->
@@ -66,6 +67,7 @@
                 </p>
             </div>
         </section>
+        <a class="credits" href="https://www.freepik.com/">Images by freepik</a>
 
         <!-- Join Instructions Section -->
         <section class="join">
@@ -73,7 +75,7 @@
                 <!-- Instructions Pane -->
                 <div class="instructions-pane">
                     <h2>Join Today</h2>
-                    <h5>How to Get Your Membership via MSA</h5>
+                    <h4>How to Get Your Membership via MSA</h4>
                     <ul class="instruction-list">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -123,5 +125,37 @@
                 </div>
             </div>
         </section>
+
+        <section class="price">
+            <h2>Membership Pricing</h2>
+            <div class="pricing-box-border">
+                <div class="pricing-box">
+                    <h3>WEM Member</h3>
+                    <div class="MSAplus-mem">
+                        <h4>$?/Year</h4>
+                        <p><small>with MSA+</small></p>
+                    </div>
+                    <div class="non-MSAplus-mem">
+                        <h4>$?/Year</h4>
+                        <p><small>without MSA+</small></p>
+                    </div>
+                    <!-- Join Button -->
+                    <button class="price-join-button"
+                        onclick="window.open('https://clubs.msa.monash.edu/organisation/7060/', '_blank')">
+                        Sign Up Now!
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                        </svg>
+                    </button>
+                    <p class="price-footnote">All members receive the same great features!</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    
+            
+    <div id="footer"></div>
 </body>

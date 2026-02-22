@@ -16,7 +16,7 @@
     --orange-light: #FFEED9;
     --black: #000000;
     --white: #ffffff;
-    --grey: rgb(142, 142, 142);
+    --grey: #8e8e8e;
 
     /* Text */
     --text-primary: var(--black);
