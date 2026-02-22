@@ -73,3 +73,41 @@ h3 {
     color: var(--purple-darkest);
     font-size: 26px;
 }
+
+.pdf-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.pdf-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pdf-gallery::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.pdf-gallery a {
+  flex: 0 0 auto; /* keep items their size */
+  text-align: center;
+}
+
+.pdf-gallery img {
+  width: 150px; /* smaller cover size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.pdf-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
