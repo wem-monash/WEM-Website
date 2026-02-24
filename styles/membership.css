@@ -172,6 +172,7 @@ body {
   padding: 15px;
   background-color: var(--purple-standard);
   font-weight: bold;
+  color: black;
 }
 
 .join-button svg {
