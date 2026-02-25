@@ -1,15 +1,139 @@
+/* top stats bar */
 .stats-section {
     background-color: var(--bg-secondary);
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    text-align: center;
 }
 
+.stat h1:last-child {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*for students*/
+.students-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: var(--bg-lightest);
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/*events*/
 .event-card {
     background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    width: 80%;
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.event-text {
+    width: 50%;
+    text-align: left;
+}
+
+.event-image {
+    width: 45%;
+    height: 220px;
+    background-color: var(--purple-dark);
+    border-radius: 16px;
+}
+
+/*small event*/
+.small-events {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .small-event {
     background-color: var(--bg-secondary);
+    width: 220px;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.small-event-image {
+    height: 120px;
+    background-color: var(--purple-dark);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/*sponsors*/
+.sponsors-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.features {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.feature-box {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    width: 280px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logos-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: var(--bg-lavender);
+}
+
+.tier {
+    margin-top: 40px;
+    color: var(--text-dark-purple);
+}
+
+.logo-row {
+    margin: 20px 0 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logo-placeholder {
+    width: 120px;
+    height: 60px;
+    background: var(--purple-light);
+    border-radius: 10px;
+}
+
+/*buttons*/
+.buttons {
+    padding: 100px 20px;
+    text-align: center;
 }
 
 .buttons button {
     background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 14px 32px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    margin: 10px 20px;
 }
