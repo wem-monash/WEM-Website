@@ -188,4 +188,76 @@ body {
     }
 }
 
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  
+  /* Info cards stack vertically */
+  .info-cards {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .contacts, .address {
+    width: 80%;
+    height: auto; /* let content define height */
+    padding: 20px;
+  }
+
+  /* Newsletter input adapts */
+  .subscribe-items {
+    grid-template-columns: 1fr 80px;
+    width: 80%;
+  }
+
+  /* Contact form adapts */
+  .contact-us-section {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px 15px;
+  }
+
+  .contact-us-row {
+    width: 100%;
+  }
+}
+
+/* Mobile: 500px and below */
+@media (max-width: 500px) {
+
+  /* Info cards smaller and stacked */
+  .contacts, .address {
+    width: 95%;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  /* Newsletter */
+  .subscribe-items {
+    grid-template-columns: 1fr; /* stack input + button */
+    width: 95%;
+    gap: 10px;
+  }
+
+  /* Contact form text smaller */
+  .contact-us-section h2 {
+    font-size: 28px;
+  }
+
+  .contact-input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .submit-button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .info-cards {
+    gap: 15px;
+  }
+}
+
 

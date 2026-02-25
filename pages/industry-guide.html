@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Industry Guide</title>
+    <script src="../scripts/global-loader.js"></script>
+
+    <link rel="stylesheet" href="../styles/global-styles.css" />
+    <link rel="stylesheet" href="../styles/industry-guide.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <div class="page-intro">
+      <h1>Industry Guide</h1>
+      <div class="intro-text-container">
+        <p>
+          Every year WEM (Women in Engineering at Monash) create a publication
+          to provide students with valuable insights into the engineering
+          industry.
+        </p>
+        <p>
+          WEM collaborates with over 20 companies who cover a wide range of
+          engineering disciplines to deliver this invaluable academic resource.
+          The industry guide covers a range of important topics including
+          information about our sponsor companies, career advice and engineer's
+          stories, extra-curricular and continuous professional development
+          opportunities and WEM’s recap of the year.
+        </p>
+      </div>
+    </div>
+
+    <div class="industry-guide-container" style="text-align: center">
+      <h1
+        class="guide-header"
+        style="color: var(--purple-darkest); margin-top: 150px"
+      >
+        2025 Industry Guide
+      </h1>
+      <h2
+        class="guide-instructions"
+        style="color: var(--purple-darkest); margin-top: 15px"
+      >
+        Scroll through the pages below
+      </h2>
+
+      <div class="pdf-book" style="margin-top: 50px">
+        <button id="prev">❮</button>
+        <canvas id="pdf-canvas"></canvas>
+        <button id="next">❯</button>
+      </div>
+
+      <a href="../assets/pdf/WEMguide25.pdf" download class="download-button">
+        Download 2025 Guide
+      </a>
+
+      <div class="guide-bottom-text-container">
+        <h3 class="guide-bottom-text" style="margin-top: 50px">
+          Have you read the 2025 Industry Guide and want to know more?
+        </h3>
+        <h3 class="guide-bottom-text">
+          Check out WEM’s (previously FEM) other Industry Guides from the past
+          few years!
+        </h3>
+        <h3 class="guide-bottom-text">
+          Clicking on any of the Guides below should allow you to download it to
+          your device
+        </h3>
+        <h3 class="guide-bottom-text">💜 Happy reading 💜</h3>
+      </div>
+
+      <div class="pdf-gallery">
+        <a href="../assets/pdf/WEMguide24.pdf" download>
+          <img src="../assets/images/guides/WEMGuide24.avif" />
+        </a>
+        <a href="../assets/pdf/WEMguide23.pdf" download>
+          <img src="../assets/images/guides/WEMGuide23.avif" alt="Guide 2" />
+        </a>
+        <a href="../assets/pdf/WEMguide22.pdf" download>
+          <img src="../assets/images/guides/WEMGuide22.avif" alt="Guide 3" />
+        </a>
+        <a href="../assets/pdf/WEMguide21.pdf" download>
+          <img src="../assets/images/guides/WEMGuide21.avif" />
+        </a>
+        <a href="../assets/pdf/WEMguide20.pdf" download>
+          <img src="../assets/images/guides/WEMGuide20.avif" alt="Guide 2" />
+        </a>
+        <a href="../assets/pdf/WEMguide19.pdf" download>
+          <img src="../assets/images/guides/WEMGuide19.avif" alt="Guide 3" />
+        </a>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="../scripts/pdf-viewer.js"></script>
+  </body>
+</html>
