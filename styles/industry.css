@@ -20,6 +20,10 @@
     background: var(--bg-lightest);
 }
 
+.students-section h2 {
+    color: var(--text-dark-purple);
+}
+
 .subtitle {
     margin-top: 10px;
     margin-bottom: 50px;
@@ -37,6 +41,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+}
+
+.event-text h1 {
+    font-size: 24px;
 }
 
 .event-text {
@@ -123,17 +131,29 @@
 }
 
 /*buttons*/
-.buttons {
-    padding: 100px 20px;
+.buttons-section {
+    padding: 120px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
 
-.buttons button {
+.buttons h3 {
+    margin-bottom: 25px;
+}
+
+.button-link {
+    display: inline-block;
     background-color: var(--bg-secondary);
     color: var(--text-secondary);
-    padding: 14px 32px;
+    padding: 14px 40px;
     border-radius: 30px;
     border: none;
     font-size: 16px;
-    margin: 10px 20px;
+}
+
+.button-link:hover {
+    background-color: var(--purple-darker);
+    transform: translateY(-4px);
 }
