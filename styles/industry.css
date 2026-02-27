@@ -154,16 +154,11 @@ body {
     font-size: var(--p-size);
 }
 
-.small-event-image {
-    width: 100%;
-    height: 120px;
-    border-radius: 12px;
-}
-
 .small-event-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 /*sponsors*/
@@ -222,6 +217,15 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: 0.4s ease;
+}
+
+.sponsor-cell:hover .sponsor-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .sponsor-cell.platinum {
@@ -272,11 +276,13 @@ body {
     border-radius: 30px;
     border: none;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .button-link:hover {
     background-color: var(--purple-darker);
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
 .reveal {
@@ -292,5 +298,7 @@ body {
 
 /*black borders for all elements*/
 .event-card, .small-event, .feature-box, .button-link, .event-image img, .small-event img {
-    border: 2px solid black;
+    border: 2px solid transparent;
+background: linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
+            linear-gradient(135deg, var(--purple-darker), var(--purple-lightest)) border-box;
 }
