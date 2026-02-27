@@ -7,12 +7,23 @@
         <link rel="stylesheet" href="../styles/industry.css">
         <link rel="stylesheet" href="../styles/global-styles.css">
     </head>
+    <script src="../scripts/industry.js"></script>
     <body>
         <div id="navbar"></div>
-        <script src="../assets/global-loader.js"></script>
+        <section class="industry-hero">
+            <img class="industry-hero-img" src="../assets/images/high-tea-3.avif" alt="industry event">
+            <div class="industry-hero-overlay"></div>
+
+            <div class="industry-hero-content">
+                <h1 class="hero-text">Industry</h1>
+            </div>
+        </section>
+
+
+        <script src="../scripts/global-loader.js"></script>
         
         <!--stats-->
-        <section class="stats-section">
+        <section class="stats-section reveal">
             <div class="stat">
                 <h1>300+</h1>
                 <h1>Members</h1>
@@ -28,43 +39,43 @@
         </section>
 
         <!--for students-->
-        <section class="students-section">
+        <section class="students-section reveal">
             <h2>For students:</h2>
-            <p class="subtitle">Our industry events</p>
+            <h5 class="subtitle">Our industry events</h5>
 
-            <div class="event-card">
+            <div class="event-card reveal">
+                <div class="event-image"></div>
                 <div class="event-text">
                     <h1>High Tea Networking</h1>
                 </div>
-                <div class="event-image"></div>
             </div>
 
-            <div class="event-card">
+            <div class="event-card reveal">
+                <div class="event-image"></div>
                 <div class="event-text">
                     <h1>Industry Guide Launch</h1>
                 </div>
-                <div class="event-image"></div>
             </div>
 
-            <div class="event-card">
+            <div class="event-card reveal">
+                <div class="event-image"></div>
                 <div class="event-text">
                     <h1>Annual Trivia Night</h1>
                 </div>
-                <div class="event-image"></div>
             </div>
 
-            <div class="small-events">
+            <div class="small-events reveal">
                 <div class="small-event">
                     <div class="small-event-image"></div>
                     <h5>WEM x BAE systems</h5>
                 </div>
 
-                <div class="small-event">
+                <div class="small-event reveal">
                     <div class="small-event-image"></div>
                     <h5>Tech Industry Night</h5>
                 </div>
 
-                <div class="small-event">
+                <div class="small-event reveal">
                     <div class="small-event-image"></div>
                     <h5>WEM x Aurecon</h5>
                 </div>
@@ -72,25 +83,25 @@
         </section>
 
         <!--for sponsors-->
-        <section class="sponsors-section">
-            <h3>For sponsors:</h3>
-            <p class="subtitle">Why become a sponsor</p>
+        <section class="sponsors-section reveal">
+            <h2>For sponsors:</h2>
+            <h5 class="subtitle">Why become a sponsor</h5>
 
             <div class="features">
                 <div class="feature-box">
                     <h5>title</h5>
-                    <p>description</p>
+                    <h6>description</h6>
                 </div>
 
                 <div class="feature-box">
                     <h5>title</h5>
-                    <p>description</p>
+                    <h6>description</h6>
                 </div>
             </div>
         </section>
 
-        <section class="logos-section">
-            <h4>Our 2026 sponsors</h4>
+        <section class="logos-section reveal">
+            <h2>Our 2026 sponsors</h2>
 
             <div class="sponsors-level">
                 <!--platinum-->
@@ -140,11 +151,11 @@
     </section>
 
     <section class="buttons-section">
-        <div class="buttons">
+        <div class="buttons reveal">
         <h3>Read our industry guide here:</h3>
         <a href="industry-guide.html" class="button-link">View Guide</a>
         </div>
-        <div class="buttons">
+        <div class="buttons reveal">
         <h3>Interested in sponsoring? Contact us here:</h3>
         <a href="contact.html" class="button-link">Contact Us</a>
         </div>

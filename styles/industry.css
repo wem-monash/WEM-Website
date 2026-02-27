@@ -1,10 +1,51 @@
+/*industry-hero*/
+.industry-hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.industry-hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.industry-hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(54,21,89,0.2),
+        rgba(54,21,89,0.85)
+    );
+}
+
+.industry-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.industry-hero-content.visible {
+    opacity: 1;
+}
+
 /* top stats bar */
 .stats-section {
     background-color: var(--bg-secondary);
-    padding: 100px 20px;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 100px;
     text-align: center;
 }
 
@@ -22,6 +63,7 @@
 
 .students-section h2 {
     color: var(--text-dark-purple);
+    font-size: var(--h2-size);
 }
 
 .subtitle {
@@ -35,12 +77,11 @@
     color: var(--text-secondary);
     width: 80%;
     margin: 40px auto;
-    padding: 50px;
+    padding: 40px;
     border-radius: 24px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .event-text h1 {
@@ -48,12 +89,11 @@
 }
 
 .event-text {
-    width: 50%;
-    text-align: left;
+    text-align: center;
 }
 
 .event-image {
-    width: 45%;
+    width: 100%;
     height: 220px;
     background-color: var(--purple-dark);
     border-radius: 16px;
@@ -69,10 +109,14 @@
 
 .small-event {
     background-color: var(--bg-secondary);
+    color: var(--text-secondary);
     width: 220px;
     padding: 20px;
     border-radius: 16px;
     text-align: center;
+}
+
+.small-event h5 {
     color: var(--text-secondary);
 }
 
@@ -87,6 +131,12 @@
 .sponsors-section {
     padding: 100px 20px;
     text-align: center;
+    color: var(--text-secondary);
+}
+
+.sponsors-section h2 {
+    color: var(--text-dark-purple);
+    font-size: var(--h2-size);
 }
 
 .features {
@@ -103,6 +153,10 @@
     padding: 40px;
     border-radius: 20px;
     text-align: center;
+}
+
+.feature-box h5 {
+    color: var(--text-secondary)
 }
 
 .logos-section {
@@ -156,4 +210,15 @@
 .button-link:hover {
     background-color: var(--purple-darker);
     transform: translateY(-4px);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
