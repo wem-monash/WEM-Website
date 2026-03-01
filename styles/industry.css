@@ -199,62 +199,6 @@ body {
     color: var(--text-secondary)
 }
 
-.logos-section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.sponsors-stack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.sponsor-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    filter: grayscale(100%);
-    opacity: 0.8;
-    transition: 0.4s ease;
-}
-
-.sponsor-cell:hover .sponsor-img {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.sponsor-cell.platinum {
-    width: 200px;
-    height: 120px;
-}
-
-.sponsor-cell.gold {
-    width: 170px;
-    height: 100px;
-}
-
-.sponsor-cell.silver {
-    width: 140px;
-    height: 80px;
-}
-
-.tier {
-    margin-top: 40px;
-    color: var(--text-dark-purple);
-}
-
-.logo-row {
-    margin: 20px 0 60px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
 /*buttons*/
 .buttons-section {
     padding: 120px 20px;

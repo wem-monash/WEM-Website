@@ -492,20 +492,20 @@
         width: 250px;
     }
 
-    .sponsors-level {
-        .heading {
-            padding-bottom: 0;
-        }
-    }
+    /*.sponsors-level {*/
+    /*    .heading {*/
+    /*        padding-bottom: 0;*/
+    /*    }*/
+    /*}*/
 
-    .sponsors-stack {
-        flex-direction: column;
-        gap: 5px;
-    }
+    /*.sponsors-stack {*/
+    /*    flex-direction: column;*/
+    /*    gap: 5px;*/
+    /*}*/
 
-    .sponsor-cell {
-        transform: scale(0.8);
-    }
+    /*.sponsor-cell {*/
+    /*    transform: scale(0.8);*/
+    /*}*/
 
     .sponsorship {
         .text {

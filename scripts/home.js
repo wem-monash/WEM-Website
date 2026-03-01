@@ -42,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(sponsorshipButton);
     }
 });
+
