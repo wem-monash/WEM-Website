@@ -5,13 +5,8 @@
   const isSubPage = window.location.pathname.includes('/pages/');
   const basePath = isSubPage ? '../' : '';
 
-  // FIXED REPO DETECTION:
-  // Works on GitHub Pages AND your local WebStorm/Live Server
-  const isGitHubPages = window.location.hostname.includes('github.io');
-  const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
   // On local servers, the repo name is often part of the URL path (e.g., /WEM-Website/index.html)
-const repoName = window.location.pathname.startsWith('/WEM-Website') ? '/WEM-Website' : '';
+  const repoName = window.location.pathname.startsWith('/WEM-Website') ? '/WEM-Website' : '';
 
   // 2. INJECT FONTS & CSS
   const links = [
@@ -55,7 +50,21 @@ const repoName = window.location.pathname.startsWith('/WEM-Website') ? '/WEM-Web
           footerContainer.innerHTML = processedData;
         });
     }
+
+    // Inject sponsors
+    const sponsorsContainer = document.getElementById('sponsors');
+    if (sponsorsContainer) {
+      fetch(`${basePath}pages/sponsors.html`)
+        .then(res => res.text())
+        .then(data => {
+          // One-step replacement for all links and images
+          let processedData = data.replace(/href="\//g, `href="${repoName}/`)
+            .replace(/src="\//g, `src="${repoName}/`);
+          sponsorsContainer.innerHTML = processedData;
+        });
+    }
   });
+
 
   function setupHamburger(navContainer) {
     const hamburger = navContainer.querySelector('.hamburger');
