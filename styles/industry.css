@@ -259,3 +259,31 @@ body {
 background: linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
             linear-gradient(135deg, var(--purple-darker), var(--purple-lightest)) border-box;
 }
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.carousel-track img {
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
