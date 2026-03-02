@@ -5,27 +5,19 @@ body {
 }
 
 .info-cards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 100px;
-  align-items: center;
-  margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin: 100px 20px 50px;
 }
 
 .contacts, .address {
     background-color: var(--purple-darker);
-    color:white;
-    height: 400px;
-    width: 450px;
+    color: white;
     border-radius: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;        
-
-    text-align: left;
-
 }
 
 .contact-text {
@@ -34,10 +26,14 @@ body {
 }
 
 .card-format {
-    width: 420px;
+    width: 100%;
     word-break: break-word;
     overflow-wrap: anywhere;
     justify-content: left;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .titles {
@@ -59,7 +55,6 @@ body {
 
 .newsletter-section {
     background-color: var(--purple-light);
-    height: 300px;
     padding-top: 20px;
 
     display: flex;
@@ -78,9 +73,10 @@ body {
 
 .subscribe-items {
     display: grid;
-    grid-template-columns: 1fr 100px;
-    gap: 5px;
-    width: 60%;   
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;  
 }
 
 .search-bar {
@@ -149,7 +145,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 500px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .contact-us-row label {
@@ -186,6 +183,29 @@ body {
         padding: 30px 20px;
         margin: 40px 10px;
     }
+
+   .subscribe-items {
+    display: flex;           /* switch from grid to flex for more control */
+    flex-direction: column;  /* stack input + button */
+    align-items: center;     /* center items horizontally */
+    gap: 10px;
+    width: 95%;
+  }
+
+  .subscribe-items input {
+    width: 100%;             /* input fills container */
+    max-width: 400px;        /* optional, email bigger than button */
+    height: 50px;            /* nice touch height */
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .contact-button {
+    width: 150px;            /* smaller than input */
+    height: 50px;            /* taller button */
+    font-size: 14px;
+    padding: 0 15px;
+  }
 }
 
 /* Tablet: 768px and below */
@@ -193,14 +213,12 @@ body {
   
   /* Info cards stack vertically */
   .info-cards {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 20px 30px;
   }
   
   .contacts, .address {
-    width: 80%;
     height: auto; /* let content define height */
     padding: 20px;
   }
@@ -228,7 +246,6 @@ body {
 
   /* Info cards smaller and stacked */
   .contacts, .address {
-    width: 95%;
     padding: 15px;
     border-radius: 25px;
   }
