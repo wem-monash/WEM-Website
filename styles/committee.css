@@ -541,25 +541,42 @@
 .subcommittee-button {
     font-family: 'Architects Daughter';
     border-radius: 8px;
-    font-weight: 600;
-    background-color: var(--purple-standard);
+    font-weight: 500;
+    background-color: var(--purple-dark);
     padding: 0px 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 27px;
     border: none;
+    color: white;
+    gap: 100px;
 }
 
 .subcommittee-button:hover {
     background-color: var(--purple-darker);
-    color: white;
 }
 
 #subcommittee-sections {
     display: flex;
     flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#subcommittee-section1 {
+    display: flex;
+    flex-direction: row;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+}
 
+#subcommittee-section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
