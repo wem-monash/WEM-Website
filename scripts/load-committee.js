@@ -80,26 +80,29 @@ function displayMembers(members) {
   container.innerHTML = ''; // Clear existing content
   
   members.forEach(member => {
-    const memberDiv = document.createElement('div');
-    memberDiv.className = 'committee-member';
-    
     // Default image if not provided
     const imageUrl = member.image || '../assets/images/default-profile-picture/Default Profile Picture.jpg';
     
-    // Create name element - either as link or plain text
-    let nameHtml = '';
-    if (member.linkedin) {
-      nameHtml = `<h3><a href="${member.linkedin}" target="_blank" class="member-name-link">${member.name}</a></h3>`;
-    } else {
-      nameHtml = `<h3>${member.name}</h3>`;
-    }
-    
-    memberDiv.innerHTML = `
+    const cardContent = `
       <img src="${imageUrl}" alt="${member.name}">
-      ${nameHtml}
+      <h3>${member.name}</h3>
       <p>${member.title || ''}</p>
     `;
-    container.appendChild(memberDiv);
+    
+    if (member.linkedin) {
+      const memberLink = document.createElement('a');
+      memberLink.className = 'committee-member has-linkedin';
+      memberLink.href = member.linkedin;
+      memberLink.target = '_blank';
+      memberLink.rel = 'noopener noreferrer';
+      memberLink.innerHTML = cardContent;
+      container.appendChild(memberLink);
+    } else {
+      const memberDiv = document.createElement('div');
+      memberDiv.className = 'committee-member';
+      memberDiv.innerHTML = cardContent;
+      container.appendChild(memberDiv);
+    }
   });
 }
 
