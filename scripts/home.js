@@ -41,5 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         observer.observe(sponsorshipButton);
     }
+
+    const panelContents = document.querySelectorAll('.panel-content');
+    panelContents.forEach(panel => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        observer.observe(panel);
+    });
 });
 
