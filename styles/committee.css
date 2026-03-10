@@ -794,9 +794,8 @@ a.committee-member {
 }
 
 .committee-structure-button:hover {
-    background-color: var(--purple-dark);
-    color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--purple-light);
 }
 
 .committee-structure-button.side {
@@ -811,15 +810,57 @@ a.committee-member {
 .committee-structure-button.purple {
     background-color: var(--purple-light);
     color: black;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 .committee-structure-button.purple:nth-of-type(5) {
     grid-column: 1;
     justify-self: center;
+    margin-top: -40px;
 }
 
 .committee-structure-button.purple:nth-of-type(6) {
     grid-column: 3;
     justify-self: center;
+    margin-top: -40px;
 }
+
+.committee-structure-button.representative {
+    margin-top: -5px;
+    grid-column: 2;
+    justify-self: center;
+}
+
+.committee-structure-button.representative:nth-of-type(7) {
+    margin-top: -15px;
+}
+
+.committee-structure-button.purple-dark {
+    background-color: var(--purple-standard);
+    color: black;
+    justify-self: center;
+    margin-top: -50px
+}
+
+.committee-structure-button.ind-sub {
+    grid-column: 1;
+    margin-top: 10px;
+}
+
+.committee-structure-button.market-sub {
+    grid-column: 3;
+    margin-top: 40px;
+}
+
+.committee-structure-button.ind-child {
+    grid-column: 1;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.committee-structure-button.market-child {
+    grid-column: 3;
+    justify-self: center;
+    margin-top: -20px;
+}
+
