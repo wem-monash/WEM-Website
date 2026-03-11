@@ -86,23 +86,29 @@ Just like the AGM, members will be notified of the time and location at least tw
 
         <div class="committee-new-panel" style="background-color: white;">
             <div class="panel-content">
-                <h2 class="hero-text" style="color: black; margin-top: 30px; margin-bottom: 50px;">Committee Structure</h2>
-                <div class="structure-grid">
-                    <button class="committee-structure-button side">Vice President</button>
-                    <button class="committee-structure-button">President</button>
-                    <button class="committee-structure-button side">Treasurer</button>
-                    <button class="committee-structure-button secretary">Secretary</button>
-                    <button class="committee-structure-button purple">Outreach Officer</button>
-                    <button class="committee-structure-button purple">Assistant Treasurer</button>
-                    <button class="committee-structure-button purple representative">General Representative</button>
-                    <button class="committee-structure-button purple representative">First Year Representative</button>
-                    <button class="committee-structure-button purple representative">Second Year Representative</button>
-                    <button class="committee-structure-button purple-dark ind-sub">Industry Director</button>
-                    <button class="committee-structure-button purple-dark market-sub">Marketing Director</button>
-                    <button class="committee-structure-button purple ind-child">Assistant Industry Director</button>
-                    <button class="committee-structure-button purple ind-child">Industry Officer</button>
-                    <button class="committee-structure-button purple market-child">Marketing Officer</button>
-
+                <h2 class="hero-text" style="color: black; margin-top: 30px; margin-bottom: 20px;">Committee Structure</h2>
+                <div class="structure-map">
+                    <svg class="structure-lines" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Branch 1 (top-left): horizontal then vertical -->
+                        <polyline points="348,16 420,16 420,75" fill="none"/>
+                        <!-- Branch 2 (mid-left): straight horizontal -->
+                        <line x1="285" y1="75" x2="420" y2="75"/>
+                        <!-- Branch 3 (bottom-left): horizontal then vertical -->
+                        <polyline points="348,134 420,134 420,75" fill="none"/>
+                        <!-- Branch 4 (top-right): horizontal then vertical -->
+                        <polyline points="552,16 480,16 480,75" fill="none"/>
+                        <!-- Branch 5 (mid-right): straight horizontal -->
+                        <line x1="615" y1="75" x2="480" y2="75"/>
+                        <!-- Branch 6 (bottom-right): horizontal then vertical -->
+                        <polyline points="552,134 480,134 480,75" fill="none"/>
+                    </svg>
+                    <button class="committee-structure-button branch-tl">Branch 1</button>
+                    <button class="committee-structure-button branch-ml">Branch 2</button>
+                    <button class="committee-structure-button branch-bl">Branch 3</button>
+                    <button class="committee-structure-button structure-pres">President</button>
+                    <button class="committee-structure-button branch-tr">Branch 4</button>
+                    <button class="committee-structure-button branch-mr">Branch 5</button>
+                    <button class="committee-structure-button branch-br">Branch 6</button>
                 </div>
             </div>
         </div>

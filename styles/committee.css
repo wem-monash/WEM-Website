@@ -755,7 +755,7 @@ a.committee-member {
 
 .committee-new-panel {
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 90px 0;
 }
 
 .panel-content {
@@ -769,20 +769,12 @@ a.committee-member {
     transform: translateY(0);
 }
 
-.structure-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px 250px;
-    margin: 30px auto 0;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .committee-structure-button {
-    border: 1px solid black;
+    border: 2px solid var(--purple-dark);
+    border-radius: 5px;
     padding: 3px 20px;
     background-color: var(--purple-standard);
-    color: black;
+    color: white;
     font-family: 'Inter', sans-serif;
     white-space: nowrap;
     width: auto;
@@ -795,72 +787,71 @@ a.committee-member {
 
 .committee-structure-button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border-color: var(--purple-light);
+    background-color: var(--purple-dark);
 }
 
-.committee-structure-button.side {
-    margin-top: 30px;
+/* ---- Mind-map structure ---- */
+.structure-map {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 150px;
+    margin: 0 auto;
 }
 
-.committee-structure-button.secretary {
-    grid-column: 2;
-    justify-self: center;
+.structure-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-.committee-structure-button.purple {
-    background-color: var(--purple-light);
-    color: black;
-    margin-top: -30px;
+.structure-lines line,
+.structure-lines polyline {
+    stroke: var(--purple-dark);
+    stroke-width: 2;
 }
 
-.committee-structure-button.purple:nth-of-type(5) {
-    grid-column: 1;
-    justify-self: center;
-    margin-top: -40px;
+.structure-map .committee-structure-button {
+    position: absolute;
+    min-width: 120px;
+    text-align: center;
 }
 
-.committee-structure-button.purple:nth-of-type(6) {
-    grid-column: 3;
-    justify-self: center;
-    margin-top: -40px;
+.structure-pres {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.committee-structure-button.representative {
-    margin-top: -5px;
-    grid-column: 2;
-    justify-self: center;
+.branch-tl {
+    left: 32%;
+    top: 2px;
 }
 
-.committee-structure-button.representative:nth-of-type(7) {
-    margin-top: -15px;
+.branch-ml {
+    left: 25%;
+    top: 61px;
 }
 
-.committee-structure-button.purple-dark {
-    background-color: var(--purple-standard);
-    color: black;
-    justify-self: center;
-    margin-top: -50px
+.branch-bl {
+    left: 32%;
+    top: 120px;
 }
 
-.committee-structure-button.ind-sub {
-    grid-column: 1;
-    margin-top: 10px;
+.branch-tr {
+    right: 32%;
+    top: 2px;
 }
 
-.committee-structure-button.market-sub {
-    grid-column: 3;
-    margin-top: 40px;
+.branch-mr {
+    right: 25%;
+    top: 61px;
 }
 
-.committee-structure-button.ind-child {
-    grid-column: 1;
-    justify-self: center;
-    margin-top: 10px;
+.branch-br {
+    right: 32%;
+    top: 120px;
 }
-
-.committee-structure-button.market-child {
-    grid-column: 3;
-    justify-self: center;
-    margin-top: -20px;
-}
-
