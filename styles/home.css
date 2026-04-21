@@ -447,9 +447,26 @@
     }
 
     .about-grid {
+        display: grid;
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
         gap: 20px;
+        grid-template-areas:
+      "who"
+      "logo"
+      "what"
+      "img";
     }
+
+    /* Map current children to those areas (no HTML changes needed) */
+    .about-grid > .about-cell:nth-child(1) { grid-area: who; }   /* "Who are we?" text */
+    .about-grid > .about-cell:nth-child(2) { grid-area: logo; }  /* Logo */
+    .about-grid > .about-cell:nth-child(3) { grid-area: img; }   /* Image */
+    .about-grid > .about-cell:nth-child(4) {
+        grid-area: what;
+        margin-top: 60px;
+    }  /* "What we do" text */
+
 
     .about-cell {
         width: 250px;
